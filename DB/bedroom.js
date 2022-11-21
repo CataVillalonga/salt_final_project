@@ -62,7 +62,7 @@ const data = [
           {
             id: 2,
             name: "Rome Bedside Table",
-            description: "xpertly crafted with kiln-dried wood, this stunning piece accentuates the raw natural beauty of the timber, highlighting its own distinctive and unique grain patterns",
+            description: "Expertly crafted with kiln-dried wood, this stunning piece accentuates the raw natural beauty of the timber, highlighting its own distinctive and unique grain patterns",
             price: "800:-",
             quantity: 3 ,
             img: 'https://b2cfurniture.com.au/pub/media/catalog/product/cache/e2559c6fc8a1422d580661548d502f20/r/o/rome-hardwood-bedside-table-natural_1.jpg'
