@@ -2,7 +2,7 @@ const data = [
   {
     category: "Bedroom",
     img:"",
-      subcategories:[
+    subcategories:[
       {
         name: 'Beds',
         products:[
