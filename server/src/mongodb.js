@@ -1,0 +1,30 @@
+import { MongoClient } from 'mongodb';
+import dotenv from 'dotenv';
+const env = dotenv.config().parsed;
+
+const url = env.mongoURL;
+const dbName = 'projectdb';
+
+let client;
+let categories;
+
+const connect = async () => {
+  client = await MongoClient.connect(url, { useNewUrlParser: true }, { useUnifiedTopology: true });
+  const db = client.db(dbName);
+  categories = db.collection('categories');
+  db.on('close', () => {
+    console.log('db connection ended');
+  });
+  db.on('reconnect', () => {
+    console.log('db connected');
+  });
+};
+
+export const getCategories = async () => {
+  await connect();
+  const allCategories = await categories.find().toArray();
+  setTimeout(() => client.close(), 1000);
+  return allCategories;
+};
+
+export default getCategories;

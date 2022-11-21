@@ -1,10 +1,19 @@
 import express from 'express';
+import { getCategories } from './mongodb';
+
 const app = express();
+const port = 8080;
 
-app.get("/", (request, response) => {
-    response.send("Hi there");
-});
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
-app.listen(8080, () => {
-    console.log("Listen on the port 3000...");
-});
+app.route('/')
+  .get(async (req, res) => {
+    const allCategories = await getCategories();
+    res
+      .json(allCategories)
+      .status(200)
+      .end();
+  })
+
+app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
