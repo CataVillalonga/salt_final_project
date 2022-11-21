@@ -99,39 +99,39 @@ const data = [
           {
             id: 1,
             name: "Jesper Wardrobe",
-            description: "dark blue gold details",
-            price:":-",
+            description: "This matte-finished wardrobe design looks great in any room. The loft sections offer a good amount of storage with a mirrored shutter giving a multifunctional look. The straight wardrobe design with swing shutters maximises storage in this design.",
+            price:"10 000:-",
             quantity: 9 ,
             img: 'https://cdn.mos.cms.futurecdn.net/JjRouxcNJxWCb7A3uRFfJ5.jpg'
           },
           {
             id: 2,
-            name: "Queen Elizabeth bed",
-            description: "open no doors beige",
-            price: ":-",
+            name: "Habitat Flicka Open Shelf Wardrobe",
+            description: "Storage star! Our smart, open shelf wardrobe gives you 4 generous sections shelves to stack T-shirts, sweaters, jeans and jumpers. You can reach what you need with ease. Made from light, pine this wardrobe has a light and airy look. Perfect for the modern bedroom.",
+            price: "6 000:-",
             quantity: 12 ,
             img: 'https://www.kuche7.com/Content/images/kitchens/Wardrobes/slider1.jpg'
           },
           {
             id: 3,
-            name: "King Arthur bed",
-            description: "Beige compact with silver details",
+            name: "Cotswold Wardrobe",
+            description: "Simple, stylish and spacious, the Atlantic 3 door 2 drawer wardrobe offers plenty of versatile storage and yet is still neat enough to fit into most bedrooms. It’s fantastic value too.",
             price: ":-",
             quantity: 5 ,
             img: 'http://cdn.shopify.com/s/files/1/0471/2926/4293/collections/wardrobes_1200x630.jpg?v=1613989440'
           },
           {
             id: 4,
-            name: "Water bed",
-            description: "dark blue with gold details a bit smaller than the other one",
+            name: "Kempton Wardrobe",
+            description: "This thoughtfully designed wardrobe balances functional storage with clean contemporary style. Tall and sleek, it has the appearance of expensive fitted furniture. Outstanding quality and value.",
             price: ":-",
             quantity: 9 ,
             img: 'https://lirp.cdn-website.com/c19fedba/dms3rep/multi/opt/Maxine+bedroom+reveal+4-640w.jpg'
           },
           {
             id: 5,
-            name: "California King bed",
-            description: "Rock looking like with mirrors",
+            name: "Oxford Wardrobe with Mirror",
+            description: "Treat your clothes to a thoroughly stylish storage solution with the London Bedrooms Fenchurch 6 Door Wardrobe. With its clean lines and elegant, panelled doors, this wardrobe looks contemporary and high-end ",
             price: ":-",
             quantity: 30 ,
             img: 'https://cdn2.trendrum.se/img/7d/bd/cf/ea/400x400/7dbdcfea4faaf1eaf149b43929cb506fae.jpg'
@@ -143,16 +143,16 @@ const data = [
         products: [
           {
             id: 1,
-            name: "",
-            description: "",
+            name: "Luxury Partner Bundle",
+            description: "The natural thermoregulating and moisture-wicking properties of linen guarantee the feeling of comfort all year round. Fitted sheets have been pre-washed for maximum softness and durability..Includes 2 duvet covers, 1 fitted sheet and 2 pillowcases.",
             price: "900:-",
             quantity: 20 ,
             img:"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/linen-bedding-1623679846.jpeg"
           },
           {
             id: 2,
-            name: "",
-            description: "",
+            name: "Teddy Duvet Set",
+            description: "Available in a range of colours and sizes, this duvet cover and pillowcase set from out Teddy Bear range is perfect for adding a cosy and warmth to your bedroom. Perfect for the colder Winter months this bedding is snugly and soft.",
             price: "1 200:-",
             quantity: 30 ,
             img:"https://cdn.shopify.com/s/files/1/0019/2253/1377/files/iStock-1296335230-min_499ba480-3300-4601-bf68-ff81fd45e5b0_x800.jpg?v=1658758738"
@@ -167,16 +167,16 @@ const data = [
           },
           {
             id: 4,
-            name: "",
-            description: "",
+            name: "Fogarty Set",
+            description: "Designed in India and available in a choice of sizes, this Fogarty duvet cover set comes with matching pillowcases included and has been made using microfibre for a luxuriously soft finish.",
             price: "1 500:-",
             quantity: 3 ,
             img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoxvOePhH8EGf1fGnpVkk-HCj1pWHW589fjQ&usqp=CAU"
           },
           {
             id: 5,
-            name: "",
-            description: "",
+            name: "Linen Set",
+            description: "Freshen up your room with this hotel quality like duvet cover and pillowcase set, designed with super soft brushed cotton for a cosy night sleep. Designed with plain dye to suit any bedroom or style.",
             price: "1 300:-",
             quantity: 10 ,
             img:"https://pyxis.nymag.com/v1/imgs/980/ed8/b439be75282eaaa618fb5782aa6bff6324-duvet.rsquare.w1200.jpg"
@@ -188,40 +188,40 @@ const data = [
         products: [
           {
             id: 1,
-            name: "",
-            description: "",
+            name: "Upholstered Storage Bench",
+            description: "This bench delivers extra seating, versatile storage, and refined style to your living space. We love its classic rolled arms and tufted seat",
             price: "1 500:-",
             quantity: 10 ,
             img:"https://secure.img1-cg.wfcdn.com/im/48190440/compr-r85/2097/209773484/default.jpg"
           },
           {
             id: 2,
-            name: "",
-            description: "",
+            name: "Aghvarth Bench",
+            description: "Add glam and classic to your home with our Aghvarth Upholstered Bench elevated on golden legs. Your entryway, boudoir, or cloakroom is ready to get a second life.",
             price: "1 600:-",
             quantity: 10 ,
             img:"https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202228/0081/bodhi-bench-c.jpg"
           },
           {
             id: 3,
-            name: "",
-            description: "",
-            price: "1 900:-",
+            name: "Etai Wood Bench",
+            description: "Natural oak as raw material, strong and durable. Simple style, linen woven decoration, more beautiful and convenient for home matching and extra storage.",
+            price: "1 300:-",
             quantity: 10 ,
             img:"https://assets.pbimgs.com/pbimgs/ab/images/dp/wcm/202234/0577/farmhouse-storage-bench-c.jpg"
           },
           {
             id: 4,
-            name: "",
-            description: "",
-            price: "1 300:-",
+            name: "Faux Leather Bench",
+            description: "This tufted faux leather bench adds a modern and simple look to the end of bed or in your entryway. The rectangular seat is upholstered in faux leather in your choice of color, and it's filled with foam padding, giving you lots of support while you sit",
+            price: "1 900:-",
             quantity: 10 ,
             img:"https://m.media-amazon.com/images/I/81O0eilziIL._AC_SL1500_.jpg"
           },
           {
             id: 5,
-            name: "",
-            description: "",
+            name: "Throggs Storage Bench",
+            description: "The ideal accent for the end of your bed, this storage bench mixes fashion with function. Upholstered with linen and foam in a plush tufted pattern that looks at home in both traditional and modern aesthetics.",
             price: "1 200:-",
             quantity: 10 ,
             img:"https://ak1.ostkcdn.com/images/products/is/images/direct/5c35f2eea939e0fdeedf1fa679e099d63dd73185/Polyester-Rolled-Arm-Storage-Bench-Contemporary-Bed-Bench.jpg"
