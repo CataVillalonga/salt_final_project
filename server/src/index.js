@@ -1,5 +1,5 @@
 import express from 'express';
-import { getCategories } from './mongodb';
+import { getCategories, postCategories } from './mongodb.js';
 
 const app = express();
 const port = 8080;
@@ -13,6 +13,15 @@ app.route('/')
     res
       .json(allCategories)
       .status(200)
+      .end();
+  })
+  .post(async (req, res) => {
+    console.log(req.body)
+    await postCategories(req.body);
+    const allCategories = await getCategories();
+    res
+      .json(allCategories)
+      .status(201)
       .end();
   })
 

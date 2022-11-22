@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 const env = dotenv.config().parsed;
 
 const url = env.mongoURL;
+// const url = "mongodb+srv://bobbybish81:MongoDBRocks!123@cluster0.eiymxut.mongodb.net/test";
 const dbName = 'projectdb';
 
 let client;
@@ -12,12 +13,6 @@ const connect = async () => {
   client = await MongoClient.connect(url, { useNewUrlParser: true }, { useUnifiedTopology: true });
   const db = client.db(dbName);
   categories = db.collection('categories');
-  db.on('close', () => {
-    console.log('db connection ended');
-  });
-  db.on('reconnect', () => {
-    console.log('db connected');
-  });
 };
 
 export const getCategories = async () => {
@@ -26,5 +21,13 @@ export const getCategories = async () => {
   setTimeout(() => client.close(), 1000);
   return allCategories;
 };
+export const postCategories = async (obj) => {
+  await connect();
+  categories.insertOne(obj);
+  const allCategories = await categories.find().toArray();
+  setTimeout(() => client.close(), 1000);
+  return allCategories;
+};
 
-export default getCategories;
+
+export default { getCategories, postCategories }; 
