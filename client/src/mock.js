@@ -6,6 +6,7 @@ module.exports = [
     subcategories:[
       {
         name: 'Beds',
+        img:'',
         products:[
           {
             id: 1,
@@ -51,6 +52,7 @@ module.exports = [
       },
       {
         name:'Nightstands',
+        img:'',
         products: [
           {
             id: 1,
@@ -96,6 +98,7 @@ module.exports = [
       },
       {
         name:'Wardrobes',
+        img:'',
         products: [
           {
             id: 1,
@@ -141,6 +144,7 @@ module.exports = [
       },
       {
         name:'Bedding',
+        img:'',
         products: [
           {
             id: 1,
@@ -186,6 +190,7 @@ module.exports = [
       },
       {
         name:'Bedroom Benches',
+        img:'',
         products: [
           {
             id: 1,
@@ -237,6 +242,7 @@ module.exports = [
     subcategories:[
       {
         name: 'Sofas',
+        img:'',
         products:[
           {
             id: 1,
@@ -282,6 +288,7 @@ module.exports = [
       },
       {
         name: 'Coffee Tables',
+        img:'',
         products:[
           {
             id: 1,
@@ -327,6 +334,7 @@ module.exports = [
       },
       {
         name: 'Cabinets',
+        img:'',
         products:[
           {
             id: 1,
@@ -372,6 +380,7 @@ module.exports = [
       },
       {
         name: 'TV Stands',
+        img:'',
         products:[
           {
             id: 1,
@@ -417,6 +426,7 @@ module.exports = [
       },
       {
         name: 'Bookcases',
+        img:'',
         products:[
           {
             id: 1,
@@ -513,6 +523,7 @@ module.exports = [
       },
       {
         name: 'Showers',
+        img:'',
         products:[
           {
             id: 1,
@@ -558,6 +569,7 @@ module.exports = [
       },
       {
         name: 'Basins',
+        img:'',
         products:[
           {
             id: 1,
@@ -603,6 +615,7 @@ module.exports = [
       },
       {
         name: 'Toilets',
+        img:'',
         products:[
           {
             id: 1,
@@ -648,6 +661,7 @@ module.exports = [
       },
       {
         name: 'Toilets',
+        img:'',
         products:[
           {
             id: 1,
@@ -693,6 +707,7 @@ module.exports = [
     ]
   },{
     category: "Common Areas",
+    img:'',
     subcategories:[
       {
         name: 'Rugs',
@@ -742,6 +757,7 @@ module.exports = [
       },
       {
         name: 'Curtains',
+        img:'',
         products:[
           {
             id: 1,
@@ -787,4 +803,391 @@ module.exports = [
       },
     ]
   },
+  {
+    category: "Kitchen",
+    img:'',
+    subcategories: [
+        {
+            name:'Cookware',
+            img: '',
+            products: [
+                {
+                  id: 1,
+                  name: "HEMKOMST 7-piece cookware set",
+                  description: "Everything you need to unleash your creativity by the stove-saucepan, pots and frying pan. A perfect set for those refreshing their cookware, moving away from home or replacing worn out cookware.",
+                  price: "800:-",
+                  quantity: 123 ,
+                  img: 'https://www.ikea.com/gb/en/images/products/hemkomst-7-piece-cookware-set-stainless-steel__1083660_pe859040_s5.jpg?f=xl',
+                  img2:'https://www.ikea.com/gb/en/images/products/hemkomst-7-piece-cookware-set-stainless-steel__1083659_pe859041_s5.jpg?f=xl'
+                },
+                {
+                  id: 2,
+                  name: "HEMKOMST Pot with lid",
+                  description: "This stainless steel pot has a spout to make pouring and draining liquids easier and a heat resistant glass lid with a built in strainer. Perfect for when you are boiling pasta or making soup.",
+                  price: "350:-",
+                  quantity: 73 ,
+                  img: 'https://www.ikea.com/gb/en/images/products/hemkomst-pot-with-lid-stainless-steel-glass__1083743_pe859078_s5.jpg?f=xl',
+                  img2:'https://www.ikea.com/gb/en/images/products/hemkomst-pot-with-lid-stainless-steel-glass__1083742_pe859079_s5.jpg?f=xl'
+                },
+                {
+                  id: 3,
+                  name: "HEMKOMST Frying pan",
+                  description: "Dinner is served. There is nothing like home-cooked food made with love. This classic frying pan with a non-stick coating makes it easy to cook your favourites at home  and wash up after everyone is full and satisfied.",
+                  price: "250:-",
+                  quantity: 93 ,
+                  img: 'https://www.ikea.com/gb/en/images/products/hemkomst-frying-pan-stainless-steel-non-stick-coating__1083707_pe859061_s5.jpg?f=xl',
+                  img2:'https://www.ikea.com/gb/en/images/products/hemkomst-frying-pan-stainless-steel-non-stick-coating__1083706_pe859062_s5.jpg?f=xl'
+                },
+                {
+                  id: 4,
+                  name: " HEMKOMST Saucepan with lid",
+                  description: "This stainless steel pot has a spout to make pouring and draining liquids easier and a heat resistant glass lid with a built in strainer. Perfect for when you are boiling pasta or making soup.",
+                  price: "250:-",
+                  quantity: 63 ,
+                  img: 'https://www.ikea.com/gb/en/images/products/hemkomst-saucepan-with-lid-stainless-steel-glass__1083758_pe859089_s5.jpg?f=xl',
+                  img2:'https://www.ikea.com/gb/en/images/products/hemkomst-saucepan-with-lid-stainless-steel-glass__1083754_pe859082_s5.jpg?f=xl'
+                },
+                {
+                  id: 5,
+                  name: " IKEA 365+ Pot with insert",
+                  description: "This pot with insert is the perfect solution for everything from delicious asparagus to pasta al dente. When the food is ready, use the handle to lift off the insert and quickly rinse what you've cooked.",
+                  price: "350:-",
+                  quantity: 63 ,
+                  img: 'https://www.ikea.com/gb/en/images/products/ikea-365-pot-with-insert-stainless-steel__1006187_pe825772_s5.jpg?f=xl',
+                  img2:'https://www.ikea.com/gb/en/images/products/ikea-365-pot-with-insert-stainless-steel__1015759_pe842406_s5.jpg?f=xl'
+                },
+                {
+                  id: 6,
+                  name: "IKEA 365+ Pressure cooker",
+                  description: "This pressure cooker preserves flavours and nutrients in a fantastic way - and it reduces the cooking time by up to 50 percent. Serve food rich with taste while saving time and energy. It's a win-win!",
+                  price: "600:-",
+                  quantity: 63 ,
+                  img: 'https://www.ikea.com/gb/en/images/products/ikea-365-pressure-cooker-stainless-steel__0812235_pe771975_s5.jpg?f=xl',
+                  img2:'https://www.ikea.com/gb/en/images/products/ikea-365-pressure-cooker-stainless-steel__1061387_ph179571_s5.jpg?f=xl'
+                },
+                {
+                  id: 7,
+                  name: "KLOCKREN Double-boiler insert",
+                  description: "Sometimes food needs extra care - that's when this double-boiler insert is a great help. Place it on a pot with boiling water and slowly cook a delicious béarnaise sauce or melt chocolate for the dessert",
+                  price: "600:-",
+                  quantity: 63 ,
+                  img: 'https://www.ikea.com/gb/en/images/products/klockren-double-boiler-insert__0791034_pe764489_s5.jpg?f=xl',
+                  img2:'https://www.ikea.com/gb/en/images/products/klockren-double-boiler-insert__0916141_pe784997_s5.jpg?f=xl'
+                },
+                {
+                  id: 8,
+                  name: "KAVALKAD Saucepan, set of 3",
+                  description: "The pan's low weight makes it easy to handle when filled with food.",
+                  price: "170:-",
+                  quantity: 43 ,
+                  img: 'https://www.ikea.com/gb/en/images/products/kavalkad-saucepan-set-of-3-black__81256_pe205898_s5.jpg?f=xl',
+                  img2:'https://www.ikea.com/gb/en/images/products/kavalkad-saucepan-set-of-3-black__0893724_pe609829_s5.jpg?f=xl'
+                },
+                {
+                  id: 9,
+                  name: "FINMAT Pot with lid",
+                  description: "FINMAT pot is designed by Ilse Crawford  and is just as inspiring to cook in as to serve from. Traditional copper and hardwearing stainless steel make it both beatiful and easy to use.",
+                  price: "700:-",
+                  quantity: 43 ,
+                  img: 'https://www.ikea.com/gb/en/images/products/finmat-pot-with-lid-copper-stainless-steel__1084541_pe867982_s5.jpg?f=xl',
+                  img2:'https://www.ikea.com/gb/en/images/products/finmat-pot-with-lid-copper-stainless-steel__1153340_pe885686_s5.jpg?f=xl'
+                },
+                {
+                  id: 10,
+                  name: " HUSKNUT Pot with lid",
+                  description: "In the clean-lined HUSKNUT series, all vessels have a non-stick coating that reduces the risk of the food burning and sticking. Simple to clean and with grip-friendly handles so they're easy to lift.",
+                  price: "450:-",
+                  quantity: 80 ,
+                  img: 'https://www.ikea.com/gb/en/images/products/husknut-pot-with-lid-black__0818258_pe774354_s5.jpg?f=xl',
+                  img2:'https://www.ikea.com/gb/en/images/products/husknut-pot-with-lid-black__0818267_pe774355_s5.jpg?f=xl'
+                },
+                
+              ],
+        },
+        {
+            name:'Kitchen Appliances',
+            img: '',
+            products: [
+                {
+                    id: 1,
+                    name: " TILLREDA Portable induction hob",
+                    description: "This portable hob is perfect for smaller kitchens or wherever you need an extra cooking zone. It's easy to move around and can be stowed away when not in use to free up counter space for other activities.",
+                    price: "550:-",
+                    quantity: 123 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/tillreda-portable-induction-hob-1-zone-white__0965512_pe809593_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/tillreda-portable-induction-hob-1-zone-white__0965760_pe809597_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 2,
+                    name: "TILLREDA Fridge",
+                    description: "A small fridge for a small-sized kitchen. Also handy in the den, basement, guest house, dorm room or wherever you may want quick access to a beverage or snack.",
+                    price: "1350:-",
+                    quantity: 73 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/tillreda-fridge-freestanding-white__0755806_pe748617_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/tillreda-fridge-freestanding-white__0434831_pe588568_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 3,
+                    name: "TILLREDA Microwave oven",
+                    description: "Preparing food couldn't be easier - simply turn the knobs and your food or beverage will be ready in no time. This handy, small-size microwave oven is easy to place just about anywhere.",
+                    price: "1250:-",
+                    quantity: 93 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/tillreda-microwave-oven-white__0912596_pe783444_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/tillreda-microwave-oven-white__1076734_pe856842_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 4,
+                    name: "SMAKSAK Microwave combi with forced air",
+                    description: "A microwave and oven combination in a traditional style with a spacious interior. Ideal for smaller kitchens or if you cook a lot and need an extra oven. It is designed to perfectly match SMAKSAK oven.",
+                    price: "5250:-",
+                    quantity: 63 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/smaksak-microwave-combi-with-forced-air-stainless-steel__0754945_pe748187_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/smaksak-microwave-combi-with-forced-air-stainless-steel__0642842_pe701476_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 5,
+                    name: "RENGÖRA Integrated dishwasher",
+                    description: "This dishwasher beats the chore of doing the dishes by hand any day - and it uses less energy and water too! You get all the basic functions you need for an easier life in the kitchen.",
+                    price: "6350:-",
+                    quantity: 63 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/rengoera-integrated-dishwasher-ikea-300__0846411_pe779069_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/rengoera-integrated-dishwasher-ikea-300__0846415_pe779073_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 6,
+                    name: " SVÄVANDE Ceiling-mounted extractor hood",
+                    description: "Timeless stainless steel design gives a stylish look. The large extraction area takes care of cooking fumes effectively, even from large hobs, and LED lighting spreads even light on the kitchen island.",
+                    price: "7600:-",
+                    quantity: 63 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/svaevande-ceiling-mounted-extractor-hood-stainless-steel__0755569_pe748468_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/svaevande-ceiling-mounted-extractor-hood-stainless-steel__0867831_pe687381_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 7,
+                    name: " VINTERKALL French door fridge/freezer",
+                    description: "This extra wide fridge/freezer offers greater capacity, a good overview and puts food in easy reach. Temp and humidity control in the fridge drawers allow you to adapt the climate to the contents.",
+                    price: "11600:-",
+                    quantity: 63 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/vinterkall-french-door-fridge-freezer-ikea-700-freestanding-black-stainless-steel__1022983_pe833012_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/vinterkall-french-door-fridge-freezer-ikea-700-freestanding-black-stainless-steel__0958055_pe805195_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 8,
+                    name: "GRUNDAD Induction hob",
+                    description: "This energy-efficient induction hob has the basic functions you need. It is quick, efficient and has 4 cooking zones that will have you cooking to perfection.",
+                    price: "2170:-",
+                    quantity: 43 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/grundad-induction-hob-ikea-300-black__0854586_pe780675_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/grundad-induction-hob-ikea-300-black__0854587_pe780674_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 9,
+                    name: "LAGAN Integrated dishwasher",
+                    description: "A reliable dishwasher that has all the basic functions you need to get the job done.",
+                    price: "3700:-",
+                    quantity: 43 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/lagan-integrated-dishwasher__0854669_pe780720_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/lagan-integrated-dishwasher__0854672_pe780722_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 10,
+                    name: " FRYSA Fridge",
+                    description: "In the clean-lined HUSKNUT series, all vessels have a non-stick coating that reduces the risk of the food burning and sticking. Simple to clean and with grip-friendly handles so they're easy to lift.",
+                    price: "9945:-",
+                    quantity: 80 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/frysa-fridge-ikea-700-integrated__0985219_pe818277_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/frysa-fridge-ikea-700-integrated__0867678_pe664452_s5.jpg?f=xl'
+                  },
+              ],
+        },
+        {
+            name:'Kitchen wall storage & organisers',
+            img: '',
+            products: [
+                {
+                    id: 1,
+                    name: "VADHOLMA Drawer unit",
+                    description: "VADHOLMA storage solutions add that extra, unexpected detail that makes the kitchen your own. These drawers, give an airy impression while hiding things like cutlery, tealight and napkins inside.",
+                    price: '950:-',
+                    quantity: 123 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/vadholma-drawer-unit-brown-stained-ash__0551816_pe658791_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/vadholma-drawer-unit-brown-stained-ash__0863047_pe692038_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 2,
+                    name: "TORNVIKEN Plate shelf",
+                    description: "The TORNVIKEN series is ideal when you need more workspace, more storage - more kitchen. Combine a kitchen island with shelves to create a rustic kitchen where you can cook together. Everyone can fit!",
+                    price: '750:-',
+                    quantity: 73 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/tornviken-plate-shelf-off-white__0734317_pe739432_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/tornviken-plate-shelf-off-white__0871043_pe693376_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 3,
+                    name: "TORNVIKEN Wine shelf",
+                    description: "With this wine shelf you add a warm and personal detail to the home and get practical storage for bottles at the same time. TORNVIKEN series comprises open storage solutions that complement your kitchen.",
+                    price: '850:-',
+                    quantity: 93 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/tornviken-wine-shelf-grey__0593892_pe675425_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/tornviken-wine-shelf-grey__0862777_pe691950_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 4,
+                    name: "VADHOLMA Wine shelf",
+                    description: "VADHOLMA storage solutions add that extra, unexpected detail that makes the kitchen your own. This wine shelf is practical storage for bottles  and at the same time a warm, genuine feature of the room.",
+                    price: '850:-',
+                    quantity: 63 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/vadholma-wine-shelf-brown-stained-ash__0551834_pe658804_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/vadholma-wine-shelf-brown-stained-ash__0862832_pe661110_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 5,
+                    name: "TORNVIKEN Wall shelf",
+                    description: "The TORNVIKEN series is ideal when you need more workspace, more storage - more kitchen. Combine a kitchen island with shelves to create a rustic kitchen where you can cook together. Everyone can fit!",
+                    price: '350:-',
+                    quantity: 63 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/tornviken-wall-shelf-grey__0734303_pe739422_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/tornviken-wall-shelf-grey__0870504_pe693382_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 6,
+                    name: "BOTKYRKA Wall shelf",
+                    description: "A wall shelf that puts essentials within easy reach. The white open storage has a fresh, modern look - and with your favourite objects on display, you add a personal touch to your kitchen.",
+                    price: '350:-',
+                    quantity: 63 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/botkyrka-wall-shelf-white__0734300_pe739416_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/botkyrka-wall-shelf-white__0870639_pe655746_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 7,
+                    name: "NEREBY Wall shelf",
+                    description: "The NEREBY series frees up worktop space and puts things close at hand. The durable blend of undyed/unbleached hemp and cotton creates a tactile texture and keeps its rustic beauty over time.",
+                    price: '90:-',
+                    quantity: 63 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/nereby-wall-shelf-birch__0942036_pe795921_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/nereby-wall-shelf-birch__0946650_pe798193_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 8,
+                    name: "STENSTORP Double hook",
+                    description: "4 screws included.Can be mounted under a countertop or shelf.",
+                    price: '90:-',
+                    quantity: 43 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/stenstorp-double-hook-silver-colour__0612171_pe685625_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/stenstorp-double-hook-silver-colour__0870853_pe598580_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 9,
+                    name: "TORNVIKEN Plate shelf",
+                    description: "The TORNVIKEN series is ideal when you need more workspace, more storage - more kitchen. Combine a kitchen island with shelves to create a rustic kitchen where you can cook together. Everyone can fit!",
+                    price: '850:-',
+                    quantity: 43 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/tornviken-plate-shelf-grey__0734316_pe739431_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/tornviken-plate-shelf-grey__0870491_pe711604_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 10,
+                    name: "KUNGSFORS Susp rail w shelf/mgnt knife rack",
+                    description: "Inspired by professionals, adapted for you. Just like in a restaurant kitchen, we've focused on durable materials and smart wall storage. Create your own combination or choose this ready-made combination",
+                    price: '1 000:-',
+                    quantity: 80 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/kungsfors-susp-rail-w-shelf-mgnt-knife-rack-stainless-steel-ash__0709901_pe727150_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/kungsfors-susp-rail-w-shelf-mgnt-knife-rack-stainless-steel-ash__0870947_pe688442_s5.jpg?f=xl'
+                  },
+              ],
+        },
+        {
+            name:'Tables & desks',
+            img: '',
+            products: [
+                {
+                    id: 1,
+                    name: "ODGER Table and 2 chairs ",
+                    description: "Have a seat and stay a while - the friendly, embracing curves and flexy material make this chair nice and comfy.",
+                    price: '3950:-',
+                    quantity: 123 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/norden-odger-table-and-2-chairs-birch-red__1057887_pe849041_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/norden-odger-table-and-2-chairs-birch-red__1038456_pe839688_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 2,
+                    name: "Skagana",
+                    description: "Modern, versatile and excellent value, Earth combines solid oak and oak veneer surfaces with powder-coated steel legs in a collection of beautifully-crafted industrial-style furniture. Dining tables are available in two sizes and optional extension leaves create a huge range of size possibilities.",
+                    price: "23 999:-",
+                    quantity: 4,
+                    img: 'https://images.chilli.se/m%C3%B6bler-bord-matgrupp/matgrupp-skagana-220-cm-inkl-6-stolar-valn%C3%B6t-4097533.jpg?w=3048&h=2032&hash=eyJ2IjoyLCJ0IjoicHJvZHVjdCIsIm4iOiIxNzk4MzExKDcpLmpwZyIsIm9fdHlwZSI6IkNISUxMSV9XRUJfU0U6cHJvZHVjdHMiLCJvX2lkIjoiMTI5ODMxMSIsImkiOjQwOTc1MzN9'
+                  },
+                  {
+                    id: 3,
+                    name: "Suzon",
+                    description: "Bring stunning contemporary style to your home at an incredible value price with the Suzon collection of dining room furniture and versatile occasional tables. Effortlessly channelling modern-industrial cool, Suzon's sturdily built and well finished pieces feature concrete-effect tops and black powder-coated metal bases.",
+                    price: "11 999:-",
+                    quantity: 10,
+                    img: 'https://images.chilli.se/m%C3%B6bler-bord-matgrupp/matgrupp-suzon-150-cm-rund-med-6-bergviken-stol-vintage-almsvart-1731317.jpg?w=752&h=501&hash=eyJ2IjoyLCJ0IjoicHJvZHVjdCIsIm4iOiI2OTQzMTcoMSkuanBnIiwib190eXBlIjoiQ0hJTExJX1dFQl9TRTpwcm9kdWN0cyIsIm9faWQiOiIyNzgzMDMiLCJpIjoxNzMxMzE3fQ%3D%3D'
+                  },
+                  {
+                    id: 4,
+                    name: "Montague",
+                    description: "Gorgeously glossy and bright, Bianco dining and occasional furniture will make your home feel light and spacious. The ultra-modern style, sculptural pedestal bases and sleek brushed detailing make a bold design statement.",
+                    price: "5 799:-",
+                    quantity: 16,
+                    img: 'https://images.chilli.se/m%C3%B6bler-bord-matgrupp/matgrupp-montague-180-cm-med-6-naira-stol-betonglookvitgr%C3%A5svart-1731019.jpg?w=752&h=501&hash=eyJ2IjoyLCJ0IjoicHJvZHVjdCIsIm4iOiI1NDcwNjgoMikuanBnIiwib190eXBlIjoiQ0hJTExJX1dFQl9TRTpwcm9kdWN0cyIsIm9faWQiOiIxMjI1NTMiLCJpIjoxNzMxMDE5fQ%3D%3D'
+                  },
+                  {
+                    id: 5,
+                    name: "Skagana",
+                    description: "Bring stunning contemporary style to your home at an incredible value price with the Skagana collection of dining room furniture and versatile occasional tables. Effortlessly channelling modern-industrial cool, Skagana's sturdily built and well finished pieces feature concrete-effect tops and black powder-coated metal bases.",
+                    price: "7 999:-",
+                    quantity: 21,
+                    img: 'https://i1.adis.ws/i/fv/PRODZFRSP000000000048862_hewitt_oval-dining-table-and-6-slatted-chairs__lifestyle?$large$&$medium_roundel$&badge=5274_ONLINE%20Autumn%20Sale_eyebrow_Christmas_delivery_182x39&w=686&fmt=webp'
+                  },
+                  {
+                    id: 6,
+                    name: "Compact Earth",
+                    description: "Fabulous industrial style sized for modern living - the Compact Earth collection presents a very on trend look that's designed to fit perfectly in more compact dining rooms and kitchen diners. ",
+                    price: "3 599:-",
+                    quantity: 27,
+                    img: 'https://i1.adis.ws/i/fv/PRODEATCFSET9-001_compact-earth_dining-table-lhf-corner-bench-and-low-dining-bench__lifestyle?$large$&w=686&fmt=webp'
+                  },
+                  {
+                    id: 7,
+                    name: "KÄTTIL Table and 2 chairs ",
+                    description: "This drop-leaf table seats 2-4. It is a good option for small spaces as the size can be adjusted easily, according to need.",
+                    price: '2290:-',
+                    quantity: 63 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/nordviken-kaettil-table-and-2-chairs-black-knisa-dark-grey__1028693_pe835491_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/nordviken-kaettil-table-and-2-chairs-black-knisa-dark-grey__1016373_pe830357_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 8,
+                    name: "EKEDALEN / EKEDALEN Table and 6 chairs ",
+                    description: "This 6-seat table can easily be extended into a 8-seat table using the included self-storing leaf.",
+                    price: '7990:-',
+                    quantity: 43 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/ekedalen-ekedalen-table-and-6-chairs-oak-ramna-light-grey__1084961_pe859969_s5.jpg?f=m',
+                    img2:'https://www.ikea.com/gb/en/images/products/ekedalen-ekedalen-table-and-6-chairs-oak-ramna-light-grey__0737434_pe741050_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 9,
+                    name: "INGOLF Table and 6 chairs",
+                    description: "Solid wood is a hardwearing natural material.",
+                    price: '6850:-',
+                    quantity: 43 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/ingatorp-ingolf-table-and-6-chairs-black-brown-black__0737451_pe741100_s5.jpg?f=xl',
+                    img2:'https://www.ikea.com/gb/en/images/products/ingatorp-ingolf-table-and-6-chairs-black-brown-black__0721033_pe733016_s5.jpg?f=xl'
+                  },
+                  {
+                    id: 10,
+                    name: " BERGMUND Table and 8 chairs ",
+                    description: "You can easily change the size of this 3-in-1 table to seat 4, 6 or 8 persons using the included self-storing leaves. If you add a seat to each short side you can even fit up to 10 persons.",
+                    price: '1 000:-',
+                    quantity: 80 ,
+                    img: 'https://www.ikea.com/gb/en/images/products/strandtorp-bergmund-table-and-8-chairs-brown-gunnared-medium-grey__1057145_pe848773_s5.jpg?f=xl',
+                    img2:'hhttps://www.ikea.com/gb/en/images/products/strandtorp-bergmund-table-and-8-chairs-brown-gunnared-medium-grey__1057189_pe848772_s5.jpg?f=xl'
+                  },
+                  
+              ],
+        },
+    ],
+}
 ]
