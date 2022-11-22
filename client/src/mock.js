@@ -801,6 +801,144 @@ module.exports = [
           },
         ]
       },
+      {
+        name: 'Mirrors',
+        img:'',
+        products:[
+          {
+            id: 1,
+            name: "Snow White Mirror",
+            description: "This mirror can tell you if you are the fairest of them all, it fits anywhere in the home and is also tested and approved for bathrooms.",
+            price: "549:-",
+            quantity: 13 ,
+            img: 'https://www.ikea.com/gb/en/images/products/lindbyn-mirror-black__1031830_pe836658_s5.jpg?f=xl'
+          },
+          {
+            id: 2,
+            name: "Beauty And The Beast Mirror",
+            description: "Is your family away and you don't have any data to call them? Well this mirror can be placed anywhere around the house and save the day.",
+            price: "79:-",
+            quantity: 17 ,
+            img: 'https://www.ikea.com/gb/en/images/products/lindbyn-mirror-black__0798821_pe767397_s5.jpg?f=xl'
+          },
+          {
+            id: 3,
+            name: "Narcissus Mirror",
+            description: "Are you obsessed with your image? Do you like looking only to yourself and noone else? Then this mirror made out of durable glass is the perfect gift for you.",
+            price: "499:-",
+            quantity: 5 ,
+            img: 'https://www.ikea.com/gb/en/images/products/lindbyn-mirror-black__0922085_ph167953_s5.jpg?f=xl'
+          },
+          {
+            id: 4,
+            name: "King's Roads Mirror",
+            description: "When boredom is heavy in the air then all you need is a nifty well made mirror that can take you away through a labyrinth of paths and bridges. It is also very good to check your dressing.",
+            price: "799:-",
+            quantity: 10 ,
+            img: 'https://www.ikea.com/gb/en/images/products/ikornnes-standing-mirror-ash__0746955_ph157405_s5.jpg?f=xl'
+          },
+          {
+            id: 5,
+            name: "Fake Magic Mirror",
+            description: "This mirror is so good that you might think that is magical. Don't try to pass through it. It will help you take the lettuce out of your teeth though.",
+            price: "159:-",
+            quantity: 11 ,
+            img: 'https://www.ikea.com/gb/en/images/products/lommaryd-mirror__1111412_pe870765_s5.jpg?f=xl'
+          },
+        ]
+      },
+      {
+        name: 'Plant Pots',
+        img:'',
+        products:[
+          {
+            id: 1,
+            name: "Glass Plant Pot",
+            description: "Subdued colours, round shapes and beautiful grooves. This plant pot gives your home a slightly softer and warmer feel. Enhance your favourite plants or just let it stand beautifully on its own.",
+            price: "89:-",
+            quantity: 18 ,
+            img: 'https://www.ikea.com/gb/en/images/products/gradvis-plant-pot-in-outdoor-green__1093824_pe863212_s5.jpg?f=xl'
+          },
+          {
+            id: 2,
+            name: "Bamboo Plant Pot",
+            description: "This handmade plant pot is made of leftover materials from our production of other bamboo products. A smart way to use nature's resources to create new unique products for your home.",
+            price: "79:-",
+            quantity: 21 ,
+            img: 'https://www.ikea.com/gb/en/images/products/klynnon-plant-pot-handmade-bamboo__1094413_pe863423_s5.jpg?f=xl'
+          },
+          {
+            id: 3,
+            name: "Pigmented Powder Plant Pot",
+            description: "Give your plants and home a facelift with new plant pots. Enhance a style or season – or cheer up the room with a new colour. It’s fun and doesn’t have to cost a fortune.",
+            price: "59:-",
+            quantity: 3 ,
+            img: 'https://www.ikea.com/gb/en/images/products/persillade-plant-pot-dark-grey__0901001_pe724992_s5.jpg?f=xl'
+          },
+          {
+            id: 4,
+            name: "Galvanised Steel Plant Pot",
+            description: "A durable and brass-coloured plant pot that enhances your plants and adds a nice touch to everyday life. Go ahead and mix several pots – plants in various heights give an extra lively and lush impression.",
+            price: "65:-",
+            quantity: 10 ,
+            img: 'https://www.ikea.com/gb/en/images/products/daidai-plant-pot-brass-colour__0768645_pe754523_s5.jpg?f=xl'
+          },
+          {
+            id: 5,
+            name: "Water Hyacinth Plant Pot",
+            description: "This pot is handmade by skilled craftspeople. We’ve chosen to use water hyacinth since it’s a sustainable material with a warm and beautiful expression.",
+            price: "60:-",
+            quantity: 14 ,
+            img: 'https://www.ikea.com/gb/en/images/products/druvflaeder-plant-pot-water-hyacinth-grey__0748655_pe745120_s5.jpg?f=xl'
+          },
+        ]
+      },
+      {
+        name: 'Decorations',
+        img:'',
+        products:[
+          {
+            id: 1,
+            name: "Dried Sedge Wall Decoration",
+            description: "Let nature decorate your walls. These 3 wall plates are shaped like circles and handmade from dried sedge. Easy to hang up to add an artsy touch in the living room, hallway or over the bed.",
+            price: "130:-",
+            quantity: 15 ,
+            img: 'https://www.ikea.com/gb/en/images/products/gillstad-wall-decoration-set-of-3-sedge-handmade__1110166_pe870384_s5.jpg?f=xl'
+          },
+          {
+            id: 2,
+            name: "Dried Fruit Pods Roof Decoration",
+            description: "Let nature tickle your senses. This handmade hanging decoration is a delight to the eye – and when the dried fruit pods move, they emit a pleasant sound that feels soothing.",
+            price: "70:-",
+            quantity: 10 ,
+            img: 'https://www.ikea.com/gb/en/images/products/vardande-hanging-decoration-handmade-natural__1114505_ph184180_s5.jpg?f=xl'
+          },
+          {
+            id: 3,
+            name: "Hanging Painting Decoration",
+            description: "A set of two warm indoor wall posters. Suitable for warm-colored rooms with big space around them so they can 'breath' and take you with them on their story.",
+            price: "147:-",
+            quantity: 9 ,
+            img: 'https://www.ikea.com/gb/en/images/products/knoppaeng-frame-with-poster-garden__0922478_ph166627_s5.jpg?f=xl'
+          },
+          {
+            id: 4,
+            name: "Aluminium Foam Acorn Decoration",
+            description: "Add a touch of nature to your home. This decorative acorn has a tactile surface and can be used both outdoors and indoors. Decorate your dining table, spruce up a plant – or place it in your everyday rooms.",
+            price: "110:-",
+            quantity: 23 ,
+            img: 'https://www.ikea.com/gb/en/images/products/vaelvaext-decoration-acorn-in-outdoor-aluminium__1081162_pe858276_s5.jpg?f=xl'
+          },
+          {
+            id: 5,
+            name: "Hellenic Wreath Decoration",
+            description: "Decorate your table with a beautiful floral wreath. Perfect to place around a vase or candlestick to create the right party atmosphere and make your dinner guests feel extra welcome.",
+            price: "72:-",
+            quantity: 2 ,
+            img: 'https://www.ikea.com/gb/en/images/products/kroesamos-wreath-red-brown__1133471_ph186000_s5.jpg?f=xl'
+          },
+        ]
+      },
     ]
   },
   {

@@ -10,9 +10,9 @@ function Home() {
   return (
     <>
       <p>Black Friday Offers end in 9 days!</p>
+      <Nav />
       <Carousels />
       <Category />
-      <Nav />
     </>
   )
 }

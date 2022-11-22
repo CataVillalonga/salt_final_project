@@ -1,0 +1,60 @@
+nav {
+  text-align: center;
+  padding: 1rem;
+  max-width: 100%;
+  margin: 20px 20px 0px;
+  border: 1px solid var(--grey);
+  border-radius: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li{
+  display: inline;
+}
+
+
+input[type=text] {
+  flex: 1;
+  border: 1px solid #EBC26F;
+  border-radius: 10px;
+  height: 40px;
+}
+
+.section {
+  display:flex;
+  justify-content: center;
+}
+
+.li {
+  flex: 1;
+}
+
+/* 
+.nav--menuLogoBag {
+  flex: 1;
+} */
+
+.desktop {
+  display: none
+}
+
+@media only screen and (min-width: 991px) {
+
+.desktop {
+  display: block
+}
+
+.mobile
+  {
+  display: none
+}
+
+input[type=text] {
+  border: 1px solid #EBC26F;
+  border-radius: 5px;
+}
+
+}
