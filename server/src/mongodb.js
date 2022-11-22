@@ -3,7 +3,6 @@ import dotenv from 'dotenv';
 const env = dotenv.config().parsed;
 
 const url = env.mongoURL;
-// const url = "mongodb+srv://bobbybish81:MongoDBRocks!123@cluster0.eiymxut.mongodb.net/test";
 const dbName = 'projectdb';
 
 let client;
