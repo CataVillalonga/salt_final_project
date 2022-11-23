@@ -17,20 +17,57 @@ ul li{
 
 
 input[type=text] {
-  flex: 1;
+  width: 100%;
   border: 1px solid #EBC26F;
   border-radius: 10px;
   height: 40px;
 }
 
-.section {
+.row {
   display:flex;
   justify-content: center;
 }
 
-.li {
+.column {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.menu {
+  justify-content: left;
+  max-width: 120px;
+}
+
+.logo {
+  justify-content: center;
+  padding: 0 0 10px 0;
+}
+
+.iconAndButton {
+  justify-content: right;
+  max-width: 150px;
+}
+
+.shoppingBagIcon {
+  font-size: 3rem;
+  padding: 0 10px 5px 0;
+}
+
+.button {
+  background-color: #77A47E;
+  border: 0.5px solid #77A47E;
+  border-radius: 4px;
+  color: white;
+  font-size: 2rem;
+  height: 40px;
+  width: 80px;
+}
+
+/* .li {
+  flex: 1;
+} */
 
 /* 
 .nav--menuLogoBag {
@@ -56,5 +93,22 @@ input[type=text] {
   border: 1px solid #EBC26F;
   border-radius: 5px;
 }
+
+.logo {
+  justify-content: left;
+  max-width: 120px;
+  padding: 0 0 10px 0;
+}
+
+.iconAndButton {
+  justify-content: right;
+  max-width: 150px;
+}
+
+.shoppingBagIcon {
+  font-size: 3rem;
+  padding: 0 10px 5px 0;
+}
+
 
 }

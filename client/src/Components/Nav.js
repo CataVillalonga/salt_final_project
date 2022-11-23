@@ -7,45 +7,62 @@ function Nav() {
   return (
     <nav>
       <section className='mobile'>
-        <section className="section nav--menuLogoBag">
-          <ul>
-            <li className="li categories"><select name="categories">
+        <section className="section row">
+          <section className="section column menu">
+            <select name="categories">
               <option></option>
-            </select></li>
-            <li className="li">CIKC</li>
-            <li className="li"><a id="linkOne" href="#thingOne"><HiOutlineShoppingBag /></a></li>
-          </ul>
+            </select>
+          </section>
+          <section className="section column logo">
+            <h1>CIKC</h1>
+          </section>
+          <section className="section column iconAndButton">
+            <a className="a shoppingBagIcon" id="linkOne" href="#thingOne"><HiOutlineShoppingBag /></a>
+            <button className="button" type="button">PAY</button>
+          </section>
         </section>
-        <section className="section nav--searchbar">
-          <input type="text" placeholder="Search.."></input>
+
+        <section className="section row">
+          <section className="section column nav--searchbar">
+            <input type="text" placeholder="Search.."></input>
+          </section>
         </section>
       </section>
       
       <section className="desktop">
-        <section >
-          <h1>Bedroom up to 40%</h1>
-          <ul>
-            <li>CIKC</li>
-            <li><input type="text" placeholder="Search.."></input></li>
-            {/* <li><a id="linkOne" href="#thingOne"><AiOutlineHeart /></a></li> */}
-            <li><a id="linkOne" href="#thingOne"><HiOutlineShoppingBag /></a></li>
-            <button type="button">PAY</button>
-          </ul>
+        
+        <section className="section row">
+          <section className="section column">
+            <h1>Bedroom up to 40%</h1>
+          </section>
         </section>
-        <section>
-          <ul>
-            <li>Living Room</li>
-            <li>Kitchen</li>
-            <li>Bedroom</li>
-            <li>Bathroom</li>
-            <li>Common Areas</li>
-            {/* <link rel="stylesheet" href="styles.css">Living Room</link> */}
-            {/* <link rel="stylesheet" href="styles.css">Kitchen</link>
-            <link rel="stylesheet" href="styles.css">Bedroom</link>
-            <link rel="stylesheet" href="styles.css">Bathroom</link>
-            <link rel="stylesheet" href="styles.css">Common Areas</link> */}
-          </ul>
+
+        <section className="section row">
+          <section className="section column logo">
+            <h1>CIKC</h1>
+          </section>
+          <section className="section column searchbox">
+            <input type="text" placeholder="Search.."></input>
+          </section>
+          <section className="section column iconAndButton">
+            <a className="a shoppingBagIcon" id="linkOne" href="#thingOne"><HiOutlineShoppingBag /></a>
+            <button className="button" type="button">PAY</button>
+          </section>
         </section>
+
+        <section className="section row">
+          <section className="section column">Living Room</section>
+          <section className="section column">Kitchen</section>
+          <section className="section column">Bedroom</section>
+          <section className="section column">Bathroom</section>
+          <section className="section column">Common Areas</section>
+          {/* <section className="section column"><link rel="stylesheet" href="styles.css">Living Room</link></section>
+          <section className="section column"><link rel="stylesheet" href="styles.css">Kitchen</link></section>
+          <section className="section column"><link rel="stylesheet" href="styles.css">Bedroom</link></section>
+          <section className="section column"><link rel="stylesheet" href="styles.css">Bathroom</link></section>
+          <section className="section column"><link rel="stylesheet" href="styles.css">Common Areas</link></section> */}
+        </section>
+
       </section>
     </nav>
   )
