@@ -98,4 +98,44 @@ export const updateCart = async (username, product) => {
   );
 }
 
-export default { getCategories, getCart, postCart, updateCart }; 
+export const deleteProduct = async (username, product) => {
+  await connectCart();
+  const cart = await carts.find({username: username}).toArray()
+  const productsArr = cart[0].products;
+  const updatedProducts = productsArr.filter(item => item.name !== product.name); // refactor with indexOf
+  const productsForUpdate = productsArr.filter(item => item.name === product.name);
+  productsForUpdate.splice(0, 1);
+  productsForUpdate.forEach(obj => {
+    updatedProducts.push(obj)
+  })
+
+  await carts.updateOne(
+    { username: username },
+    {
+      $set: {
+        products: updatedProducts,
+        total_items: updatedProducts.length,
+        total_price: totalPrice(updatedProducts),
+      },
+    },
+  );
+}
+
+export const deleteCart = async (username) => {
+  try {
+    await connectCart();
+    await carts.deleteOne({ username });
+    setTimeout(() => client.close(), 1000);
+  } catch (e) {
+    throw new Error(e.message);
+  }
+};
+
+export default { 
+  getCategories,
+  getCart,
+  postCart,
+  updateCart,
+  deleteProduct,
+  deleteCart
+}; 
