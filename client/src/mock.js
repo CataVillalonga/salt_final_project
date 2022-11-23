@@ -233,7 +233,7 @@ module.exports = [
   },
   {
     category: "Living Room",
-    img: "",
+    img: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fGxpdmluZyUyMHJvb218ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60",
     subcategories:[
       {
         name: 'Sofas',
