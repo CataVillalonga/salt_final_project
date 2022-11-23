@@ -1,5 +1,5 @@
 import express from 'express';
-import { getCategories } from './mongodb';
+import { getCategories, getCart, postCart, updateCart, deleteProduct, deleteCart } from './mongodb.js';
 
 const app = express();
 const port = 8080;
@@ -7,6 +7,7 @@ const port = 8080;
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+// category routes
 app.route('/')
   .get(async (req, res) => {
     const allCategories = await getCategories();
@@ -15,5 +16,42 @@ app.route('/')
       .status(200)
       .end();
   })
+
+//cart routes
+app.route('/carts')
+  .post(async (req, res) => {
+    let cart = await getCart(req.body.username);
+    if (cart.length === 0) {
+      const postedCart = await postCart(req.body.username, req.body.products)
+      return res
+      .json(postedCart)
+      .status(201)
+      .end();
+    }
+    await updateCart(req.body.username, req.body.products);
+    cart = await getCart(req.body.username);
+    return res
+    .json(cart)
+    .status(200)
+    .end();
+  })
+  .patch(async (req, res) => {
+    await deleteProduct(req.body.username, req.body.products);
+    const cart = await getCart(req.body.username);
+    return res
+    .json(cart)
+    .status(200)
+    .end();
+  })
+  .delete(async (req, res) => {
+    await deleteCart(req.body.username);
+    const cart = await getCart(req.body.username);
+    return res
+    .json(cart)
+    .status(200)
+    .end();
+  })
+
+//account routes
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));
