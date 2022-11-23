@@ -2,7 +2,7 @@
 module.exports = [
   {
     category: "Bedroom",
-    img:"",
+    img:"https://images.pexels.com/photos/2029694/pexels-photo-2029694.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     subcategories:[
       {
         name: 'Beds',
@@ -238,7 +238,7 @@ module.exports = [
   },
   {
     category: "Living Room",
-    img: "",
+    img: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     subcategories:[
       {
         name: 'Sofas',
@@ -474,7 +474,7 @@ module.exports = [
   },
   {
     category: "Bathroom",
-    img: "",
+    img: "https://images.pexels.com/photos/3288104/pexels-photo-3288104.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     subcategories:[
       {
         name: 'Baths',
@@ -707,7 +707,7 @@ module.exports = [
     ]
   },{
     category: "Common Areas",
-    img:'',
+    img:'https://images.pexels.com/photos/4682081/pexels-photo-4682081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     subcategories:[
       {
         name: 'Rugs',
@@ -805,7 +805,7 @@ module.exports = [
   },
   {
     category: "Kitchen",
-    img:'',
+    img:'https://images.pexels.com/photos/2029694/pexels-photo-2029694.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     subcategories: [
         {
             name:'Cookware',
