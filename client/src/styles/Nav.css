@@ -1,0 +1,114 @@
+nav {
+  text-align: center;
+  padding: 1rem;
+  max-width: 100%;
+  margin: 20px 20px 0px;
+  border: 1px solid var(--grey);
+  border-radius: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li{
+  display: inline;
+}
+
+
+input[type=text] {
+  width: 100%;
+  border: 1px solid #EBC26F;
+  border-radius: 10px;
+  height: 40px;
+}
+
+.row {
+  display:flex;
+  justify-content: center;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  justify-content: left;
+  max-width: 120px;
+}
+
+.logo {
+  justify-content: center;
+  padding: 0 0 10px 0;
+}
+
+.iconAndButton {
+  justify-content: right;
+  max-width: 150px;
+}
+
+.shoppingBagIcon {
+  font-size: 3rem;
+  padding: 0 10px 5px 0;
+}
+
+.button {
+  background-color: #77A47E;
+  border: 0.5px solid #77A47E;
+  border-radius: 4px;
+  color: white;
+  font-size: 2rem;
+  height: 40px;
+  width: 80px;
+}
+
+/* .li {
+  flex: 1;
+} */
+
+/* 
+.nav--menuLogoBag {
+  flex: 1;
+} */
+
+.desktop {
+  display: none
+}
+
+@media only screen and (min-width: 991px) {
+
+.desktop {
+  display: block
+}
+
+.mobile
+  {
+  display: none
+}
+
+input[type=text] {
+  border: 1px solid #EBC26F;
+  border-radius: 5px;
+}
+
+.logo {
+  justify-content: left;
+  max-width: 120px;
+  padding: 0 0 10px 0;
+}
+
+.iconAndButton {
+  justify-content: right;
+  max-width: 150px;
+}
+
+.shoppingBagIcon {
+  font-size: 3rem;
+  padding: 0 10px 5px 0;
+}
+
+
+}
