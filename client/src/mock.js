@@ -237,7 +237,7 @@ module.exports = [
     ]
   },
   {
-    category: "Living Room",
+    category: "Living-Room",
     img: "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     subcategories:[
       {
@@ -706,7 +706,7 @@ module.exports = [
       }
     ]
   },{
-    category: "Common Areas",
+    category: "Common-Areas",
     img:'https://images.pexels.com/photos/4682081/pexels-photo-4682081.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
     subcategories:[
       {

@@ -3,7 +3,6 @@ import SubCategory from './SubCategory'
 
 function Category({ obj }) {
   const {subcategories} = obj
-  console.log(subcategories)
   return (
     <>
     <section className='category-container'>
