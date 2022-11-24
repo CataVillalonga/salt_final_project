@@ -2,6 +2,7 @@ import React from 'react'
 // import { AiOutlineHeart } from 'react-icons/ai';
 import { HiOutlineShoppingBag } from 'react-icons/hi';
 import '../styles/Nav.css';
+import Login from '.././Auth/Login'
 
 function Nav() {
   return (
@@ -35,6 +36,7 @@ function Nav() {
           <section className="section column">
             <h1>Bedroom up to 40%</h1>
           </section>
+          <button className="button"><i className="fa fa-sign-in"></i></button>
         </section> */}
 
         <section className="section row">
@@ -42,11 +44,11 @@ function Nav() {
             <h1>CIKC</h1>
           </section>
           <section className="section column searchbox">
-            <input type="text" placeholder="Search.."></input>ç
+            <input type="text" placeholder="Search.."></input>
           </section>
           <section className="section column iconAndButton">
             <a className="a shoppingBagIcon" id="linkOne" href="#thingOne"><HiOutlineShoppingBag /></a>
-            <button className="button"><i className="fa fa-sign-in"></i></button>
+            <Login/>
           </section>
         </section>
 

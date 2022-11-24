@@ -1,0 +1,38 @@
+.sidepanel  {
+    width: 30%;
+    height:100%;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    /* overflow-x: hidden; */
+    transition: 0.5s;
+    color: white;
+    padding: 1rem 2rem;
+  }
+  
+  .closebtn{
+    text-decoration: none;
+    color: #818181;
+    transition: 0.3s;
+    background-color: #111;
+    border: none;
+    font-size: 3rem;
+  }
+  
+.closebtn:hover {
+    text-decoration: none;
+    color: #f1f1f1;
+
+}
+  
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    margin: 0;
+}
