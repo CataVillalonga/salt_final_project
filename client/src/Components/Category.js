@@ -6,14 +6,17 @@ function Category({ obj }) {
   console.log(subcategories)
   return (
     <>
+    <h3 className='category-name'><a href=''>Everything for {obj.category}</a></h3>
     <section className='category-container'>
-      <h3 className='category-name'><a href=''>Everything for {obj.category}</a></h3>
       <img className='img-container' alt='category ' src={obj.img}/>
     </section>
     <section className='subcategory-container'>
-      {
-        
-      }
+      
+      {/* <img className='img-container' alt='category ' src={obj.img}/>
+      <img className='img-container' alt='category ' src={obj.img}/>
+      <img className='img-container' alt='category ' src={obj.img}/>
+      <img className='img-container' alt='category ' src={obj.img}/> */}
+      
     </section>
     </>
   )
