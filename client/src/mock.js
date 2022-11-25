@@ -6,7 +6,7 @@ module.exports = [
     subcategories:[
       {
         name: 'Beds',
-        img:'',
+        img:'https://images.pexels.com/photos/5998137/pexels-photo-5998137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
         products:[
           {
             id: 1,
@@ -52,7 +52,7 @@ module.exports = [
       },
       {
         name:'Nightstands',
-        img:'',
+        img:'https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1663354914-white-nightstands-kf210123-04-xin-64_1000.jpg?crop=1xw:1.00xh;center,top&resize=480:*',
         products: [
           {
             id: 1,
@@ -98,7 +98,7 @@ module.exports = [
       },
       {
         name:'Wardrobes',
-        img:'',
+        img:'https://i.pinimg.com/736x/75/ac/d7/75acd70e2825808c1384026b5d630610.jpg',
         products: [
           {
             id: 1,
@@ -144,7 +144,7 @@ module.exports = [
       },
       {
         name:'Bedding',
-        img:'',
+        img:'https://image.s5a.com/is/image/TheBay/233_090922_VISUAL-NAV_SHEETS_BEDDING_SETS_SHOP_BY_CAT_ROW_1_Sheets-Pillowcases_1?scl=1&qlt=75&fmt=webp',
         products: [
           {
             id: 1,
@@ -190,7 +190,7 @@ module.exports = [
       },
       {
         name:'Bedroom Benches',
-        img:'',
+        img:'https://i.shelterness.com/2019/05/02-a-pink-velvet-bedroom-bench-with-a-storage-space-inside-is-a-girlish-touch-to-your-space.jpg',
         products: [
           {
             id: 1,
@@ -234,6 +234,20 @@ module.exports = [
           },
         ]
       },
+      {
+        name:'Bedroom Decor',
+        img:'https://cdn.shopify.com/s/files/1/0399/4664/9758/products/croc-gold-medium-vase-accessories-premier-128594_345x345@2x.jpg?v=1647881360',
+        products: [
+          {
+            id: 1,
+            name: "Upholstered Storage Bench",
+            description: "This bench delivers extra seating, versatile storage, and refined style to your living space. We love its classic rolled arms and tufted seat",
+            price: "1 500:-",
+            quantity: 10 ,
+            img:"https://secure.img1-cg.wfcdn.com/im/48190440/compr-r85/2097/209773484/default.jpg"
+          }
+        ]
+      }
     ]
   },
   {
