@@ -5,20 +5,22 @@ function Category({ obj }) {
   const {subcategories} = obj
   console.log(subcategories)
   return (
-    <>
+    <section className='section categories-subcategories'>
     <h3 className='category-name'><a href=''>Everything for {obj.category}</a></h3>
     <section className='category-container'>
       <img className='img-container' alt='category ' src={obj.img}/>
     </section>
     <section className='subcategory-container'>
       
-      {/* <img className='img-container' alt='category ' src={obj.img}/>
-      <img className='img-container' alt='category ' src={obj.img}/>
-      <img className='img-container' alt='category ' src={obj.img}/>
-      <img className='img-container' alt='category ' src={obj.img}/> */}
+      <img className='img img-container' alt='category ' src={obj.img}/>
+      <img className='img img-container' alt='category ' src={obj.img}/>
+      <img className='img img-container' alt='category ' src={obj.img}/>
+      <img className='img img-container' alt='category ' src={obj.img}/>
+      <img className='img img-container' alt='category ' src={obj.img}/>
+      <img className='img img-container' alt='category ' src={obj.img}/>
       
     </section>
-    </>
+    </section>
   )
 }
 
