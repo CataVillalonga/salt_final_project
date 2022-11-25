@@ -1,12 +1,18 @@
-import React from 'react'
+import React,{ useState } from 'react'
 // import { AiOutlineHeart } from 'react-icons/ai';
 import { HiOutlineShoppingBag } from 'react-icons/hi';
 import '../styles/Nav.css';
 import Login from '.././Auth/Login'
+import Cart from './Cart'
 
 function Nav() {
+   const [style, setStyle] = useState('closedsidepanel')
+  const handleCart = () => {
+    setStyle('opensidepanel');
+  }
   return (
     <nav>
+      < Cart style={style} setStyle={setStyle}/>
       <section className='mobile'>
         <section className="section row">
           <section className="section column menu">
@@ -18,7 +24,7 @@ function Nav() {
             <h1>CIKC</h1>
           </section>
           <section className="section column iconAndButton">
-            <a className="a shoppingBagIcon" id="linkOne" href="#thingOne"><HiOutlineShoppingBag /></a>
+            <a onClick={handleCart} className="a shoppingBagIcon" id="linkOne" href="#thingOne"><HiOutlineShoppingBag /></a>
             <button className="button" type="button">PAY</button>
           </section>
         </section>
@@ -47,7 +53,7 @@ function Nav() {
             <input type="text" placeholder="Search.."></input>
           </section>
           <section className="section column iconAndButton">
-            <a className="a shoppingBagIcon" id="linkOne" href="#thingOne"><HiOutlineShoppingBag /></a>
+            <a onClick={handleCart} className="a shoppingBagIcon" id="linkOne"><HiOutlineShoppingBag /></a>
             <Login/>
           </section>
         </section>
