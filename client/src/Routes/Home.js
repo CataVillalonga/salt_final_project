@@ -10,7 +10,6 @@ function Home({ data }) {
   return (
     <>
       <Nav />
-      <h2 className="h1">Black Friday Offers end in 9 days!</h2>
       <Carousels />
       <main className="main-container">
         {data?.map(obj => {
