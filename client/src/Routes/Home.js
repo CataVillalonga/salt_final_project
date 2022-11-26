@@ -3,8 +3,6 @@ import Carousels from '../Components/Carousels'
 import Category from '../Components/Category';
 import Nav from '../Components/Nav'
 import '../styles/main.css'
-
-
 function Home({ data }) {
   
   return (
@@ -19,5 +17,4 @@ function Home({ data }) {
     </>
   )
 }
-
 export default Home

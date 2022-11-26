@@ -26,7 +26,6 @@ const basket = [{
   total_items: 3,
   total_price: 17145
 }]
-
 function Cart({ style, setStyle }) {
   const products = basket?.map(obj => obj.products);
   const totalPrice = basket?.map(obj => obj.total_price);
@@ -34,7 +33,8 @@ function Cart({ style, setStyle }) {
   return (
 <section id="closedsidepanel" className={style}>
     <header className='cart-header'>
-    <h4 className="cart-heading">Your CIKC Basket</h4>
+    
+    <h4 className="cart-heading"><img className="cartLogo" src={require('../images/CIKC_round_logo.png')}></img>Your Basket</h4>
         <button onClick={() => setStyle('closedsidepanel')} href="javascript:void(0)" className="closebtn" onclick="closeNav()">×</button>
     </header>
     {!products ? <div className="cart-message"><h4>Your basket is empty</h4></div> : 
@@ -63,10 +63,8 @@ function Cart({ style, setStyle }) {
             </div>
             <button className="checkoutBtn">Go To Checkout</button>
           </div>
-
         </article>}
     </section>
   )
 }
-
 export default Cart

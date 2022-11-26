@@ -1,0 +1,9 @@
+.banana {
+  height: 50rem;
+}
+
+.carusel img{
+  width: 100%!important;
+  height: 50rem;
+  object-fit: cover;
+}
