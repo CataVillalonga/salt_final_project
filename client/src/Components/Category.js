@@ -8,7 +8,6 @@ function Category({ obj }) {
   const xHandler = () => {
     navigate('/bedroom');
   }
-  console.log(obj)
   return (
     <section className='section categories-subcategories'>
     <h3 className='category-name' onClick={xHandler}><a href=''>Everything for {obj.category}</a></h3>

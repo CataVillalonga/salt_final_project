@@ -66,7 +66,7 @@ export const postCart = async (username, product) => {
     total_items: 1,
     total_price: newPrice,
   }
-  carts.insertOne(cart);
+  await carts.insertOne(cart);
   setTimeout(() => client.close(), 1000);
   return cart;
 };

@@ -2,13 +2,13 @@ import express from 'express';
 import { getCategories, getCart, postCart, updateCart, deleteProduct, deleteCart } from './mongodb.js';
 
 const app = express();
-const port = 8080;
+const port = 8081;
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // category routes
-app.route('/')
+app.route('/api/products')
   .get(async (req, res) => {
     const allCategories = await getCategories();
     res
@@ -21,10 +21,12 @@ app.route('/')
 app.route('/carts')
   .post(async (req, res) => {
     let cart = await getCart(req.body.username);
+    console.log(req.body.username, req.body, 'hiiiii')
     if (cart.length === 0) {
       const postedCart = await postCart(req.body.username, req.body.products)
+      cart = await getCart(req.body.username);
       return res
-      .json(postedCart)
+      .json(cart)
       .status(201)
       .end();
     }
@@ -51,7 +53,15 @@ app.route('/carts')
     .status(200)
     .end();
   })
-
+app.route('/carts/:username')
+.get(async (req, res) => {
+  const name =req.params.username;
+  const cart = await getCart(name);
+  return res
+  .json(cart)
+  .status(200)
+  .end();
+})
 //account routes
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`));

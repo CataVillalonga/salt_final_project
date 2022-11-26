@@ -4,20 +4,24 @@ import { addToCart } from "../Modules/Cart"
 import { useAuth0 } from "@auth0/auth0-react";
 import '../styles/product.css'
 import blackBanner from '../imgs/blackBanner.jpg'
-function Product({ item, setCart }) {
+function Product({ item, setCart, cart }) {
   const {user, isAuthenticated } = useAuth0();
   const [loginAlert , setLoginAlert] = useState(false)
   const quantity = [1,2,3,4,5,6,7,8,9]
-  const cartHandler = () => {
+  console.log(item)
+  const cartHandler = async(e) => {
+    e.preventDefault()
     if (!isAuthenticated){
-      console.log(user)
       return setLoginAlert(<p>Please login to add items to your cart</p>)
     }
-    console.log(user)
+    const name = user.name.replace(' ','-')
+    const updatedCart = await addToCart(name, item)
+    console.log(updatedCart,'updateed')
+    setCart(updatedCart)
   }
   return (
     <>
-    <Nav />
+    <Nav cart={cart} />
     {/* <section>
       <img className='black-banner'src={blackBanner}/>
     </section> */}

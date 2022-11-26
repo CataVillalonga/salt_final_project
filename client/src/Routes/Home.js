@@ -3,11 +3,11 @@ import Carousels from '../Components/Carousels'
 import Category from '../Components/Category';
 import Nav from '../Components/Nav'
 import '../styles/main.css'
-function Home({ data }) {
+function Home({ data, cart }) {
   
   return (
     <>
-      <Nav />
+      <Nav cart={cart}/>
       <Carousels />
       <main className="main-container">
         {data?.map(obj => {

@@ -26,9 +26,9 @@ const basket = [{
   total_items: 3,
   total_price: 17145
 }]
-function Cart({ style, setStyle }) {
-  const products = basket?.map(obj => obj.products);
-  const totalPrice = basket?.map(obj => obj.total_price);
+function Cart({ style, setStyle, cart }) {
+  const productList = cart?.products;
+  const totalPrice = cart?.total_price;
   const [pressed, setPressed] = useState(false)
   return (
 <section id="closedsidepanel" className={style}>
@@ -37,10 +37,9 @@ function Cart({ style, setStyle }) {
     <h4 className="cart-heading"><img className="cartLogo" src={require('../images/CIKC_round_logo.png')}></img>Your Basket</h4>
         <button onClick={() => setStyle('closedsidepanel')} className="closebtn">×</button>
     </header>
-    {!products ? <div className="cart-message"><h4>Your basket is empty</h4></div> : 
+    {!productList ? <div className="cart-message"><h4>Your basket is empty</h4></div> : 
         <article className="cart-container">
-        {products?.map((obj, index) => {
-          return obj.map((obj, index) =>  {
+        {productList?.map((obj, index) => {
             return (
                   <article className="cart-items" key={index}> 
                     <div className="cart-img-container">
@@ -53,7 +52,6 @@ function Cart({ style, setStyle }) {
                     </div>  
                   </article>
                 )
-              })
             }
           )}
           <div className="checkout">
