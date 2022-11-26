@@ -1,8 +1,10 @@
 import React from 'react'
 
-function SubCategory({ SubCategory }) {
+function SubCategory({ item }) {
   return (
-    <div>SubCategory</div>
+    <>
+      <img className='img img-container' alt='category ' src={item.img}/>
+    </>
   )
 }
 

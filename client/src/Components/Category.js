@@ -7,8 +7,8 @@ function Category({ obj }) {
   const navigate = useNavigate();
   const xHandler = () => {
     navigate('/bedroom');
-
   }
+  console.log(obj)
   return (
     <section className='section categories-subcategories'>
     <h3 className='category-name' onClick={xHandler}><a href=''>Everything for {obj.category}</a></h3>
@@ -16,14 +16,9 @@ function Category({ obj }) {
       <img className='img-container' alt='category ' src={obj.img}/>
     </section>
     <section className='subcategory-container'>
-      
-      <img className='img img-container' alt='category ' src={obj.img}/>
-      <img className='img img-container' alt='category ' src={obj.img}/>
-      <img className='img img-container' alt='category ' src={obj.img}/>
-      <img className='img img-container' alt='category ' src={obj.img}/>
-      <img className='img img-container' alt='category ' src={obj.img}/>
-      <img className='img img-container' alt='category ' src={obj.img}/>
-      
+      {obj.subcategories?.map(item => {
+        return <SubCategory item={item}/>
+      })}  
     </section>
     </section>
   )

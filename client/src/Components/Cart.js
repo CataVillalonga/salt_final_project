@@ -35,7 +35,7 @@ function Cart({ style, setStyle }) {
     <header className='cart-header'>
     
     <h4 className="cart-heading"><img className="cartLogo" src={require('../images/CIKC_round_logo.png')}></img>Your Basket</h4>
-        <button onClick={() => setStyle('closedsidepanel')} href="javascript:void(0)" className="closebtn" onclick="closeNav()">×</button>
+        <button onClick={() => setStyle('closedsidepanel')} className="closebtn">×</button>
     </header>
     {!products ? <div className="cart-message"><h4>Your basket is empty</h4></div> : 
         <article className="cart-container">

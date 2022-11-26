@@ -29,7 +29,7 @@ function Nav() {
         <section className="section row">
             <aside className="section column menu">
               <div id="mySidepanel" className="sidepanel" style={ {width: isOpen ? '300px' : '0px'} }>
-                <a href="javascript:void(0)" className="closebtn" onClick={toggle}>×</a>
+                <a className="closebtn" onClick={toggle}>×</a>
                 <a className="a column" href='http://localhost:3000/living-room'>Living Room</a>
                 <a className="a column" href='http://localhost:3000/kitchen'>Kitchen</a>
                 <a className="a column" href='http://localhost:3000/bedroom'>Bedroom</a>

@@ -1,9 +1,20 @@
 import Nav from "../Components/Nav"
+import React, { useState } from "react";
+import { addToCart } from "../Modules/Cart"
+import { useAuth0 } from "@auth0/auth0-react";
 import '../styles/product.css'
 import blackBanner from '../imgs/blackBanner.jpg'
-function Product({ item }) {
+function Product({ item, setCart }) {
+  const {user, isAuthenticated } = useAuth0();
+  const [loginAlert , setLoginAlert] = useState(false)
   const quantity = [1,2,3,4,5,6,7,8,9]
-  console.log(item)
+  const cartHandler = () => {
+    if (!isAuthenticated){
+      console.log(user)
+      return setLoginAlert(<p>Please login to add items to your cart</p>)
+    }
+    console.log(user)
+  }
   return (
     <>
     <Nav />
@@ -22,7 +33,8 @@ function Product({ item }) {
           <select >
             {quantity.map(num => <option key= {num} value={num}>{num}</option>)}
           </select>
-          <button>Add to cart</button>
+          <button onClick={cartHandler}>Add to cart</button>
+          {loginAlert}
       </div>
       </section>
     </section>

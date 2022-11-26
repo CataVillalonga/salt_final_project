@@ -14,12 +14,11 @@ function ProductSubcategory({ itemsObj, category, name }) {
       <Nav />
       <section className="product-subcategory-container">
         <section className="offers-container">
-          <p>{category + ' / ' + itemsObj.name }</p>
-          <h4>Design & Confort</h4>
+          <h4>Design & Comfort</h4>
           <img src={itemsObj.img}/>
         </section >
         <section className="subcategory-filter-container">
-          <label for={itemsObj.name}>Sort by:</label>
+          <label>Sort by:</label>
           <select >
             <option value="lowest">lowest to highest price</option>
             <option value="highest">highest to lowest price</option>

@@ -1,20 +1,38 @@
-import { Routes, Route} from 'react-router-dom'
+import { Routes, Route, json} from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Home from './Routes/Home'
 import ProductCategory from './Routes/ProductCategory';
 import ProductSubcategory from './Routes/ProductSubcategory';
 import Product from './Routes/Product';
 import './App.css';
-const mockData = require('./mock')
+
 
 
 function App() {
 
   const [data, setData] = useState()
+  const [cart, setCart] = useState()
+
+  const getProducts = async url => {
+    const response = await fetch(url);
+    const data = await response.json();
+    setData(data);
+  };
 
   useEffect(() => {
-    setData(mockData)
-  })
+    getProducts('/api/products')
+  },[])
+  
+  const getCart = async url => {
+    const response = await fetch(url);
+    const data = await response.json();
+    setCart(data);
+  };
+
+  useEffect(() => {
+    getCart('/api/carts')
+  },[])
+  console.log(cart)
 
   return (
     <>
@@ -38,7 +56,7 @@ function App() {
           return subcategories.map(itemsObj => {
             const {products} = itemsObj
             return products.map( item =>{
-              return <Route path={`/${category}/${itemsObj.name}/${item.id}`} element ={<Product item={item}/>} /> 
+              return <Route path={`/${category}/${itemsObj.name}/${item.id}`} element ={<Product item={item} setCart={setCart}/>} /> 
             })
           })
       })}
