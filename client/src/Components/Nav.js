@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import '../styles/Nav.css';
 import Login from '.././Auth/Login'
 import Cart from './Cart'
-function Nav({ cart }) {
+function Nav({ cart, setCart }) {
   const [isOpen, setIsOpen] = useState(false);
   const [style, setStyle] = useState('closedsidepanel')
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ function Nav({ cart }) {
 
   return (
     <nav>
-      <Cart style={style} cart={cart} setStyle={setStyle}/>
+      <Cart style={style} cart={cart} setCart={setCart} setStyle={setStyle}/>
       <section className='mobile'>
         <section className="section row">
             <aside className="section column menu">

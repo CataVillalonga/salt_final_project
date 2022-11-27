@@ -16,12 +16,11 @@ function Product({ item, setCart, cart }) {
     }
     const name = user.name.replace(' ','-')
     const updatedCart = await addToCart(name, item)
-    console.log(updatedCart,'updateed')
     setCart(updatedCart)
   }
   return (
     <>
-    <Nav cart={cart} />
+    <Nav cart={cart} setCart={setCart} />
     {/* <section>
       <img className='black-banner'src={blackBanner}/>
     </section> */}

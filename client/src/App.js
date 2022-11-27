@@ -43,14 +43,14 @@ function App() {
         <Route path="/" element={<Home data={data} cart={cart}/>}></Route>
         {data?.map(categoryObj => {
           const {category} = categoryObj
-        return <Route path={`/${category}`} element ={<ProductCategory cart={cart} categoryObj={categoryObj} category={category}/>} /> 
+        return <Route path={`/${category}`} element ={<ProductCategory cart={cart} setCart={setCart}  categoryObj={categoryObj} category={category}/>} /> 
       })}
       {data?.map(categoryObj => {
           const {category} = categoryObj
           const {subcategories} = categoryObj
           return subcategories.map(itemsObj => {
             const {name} = itemsObj
-            return <Route path={`/${category}/${itemsObj.name}`} element ={<ProductSubcategory cart={cart} itemsObj={itemsObj} category={category} name={name}/>} /> 
+            return <Route path={`/${category}/${itemsObj.name}`} element ={<ProductSubcategory cart={cart} setCart={setCart} itemsObj={itemsObj} category={category} name={name}/>} /> 
           })
       })}
       {data?.map(categoryObj => {
@@ -59,7 +59,7 @@ function App() {
           return subcategories.map(itemsObj => {
             const {products} = itemsObj
             return products.map( item =>{
-              return <Route path={`/${category}/${itemsObj.name}/${item.id}`} element ={<Product cart={cart} item={item} setCart={setCart}/>} /> 
+              return <Route path={`/${category}/${itemsObj.name}/${item.id}`} element ={<Product cart={cart}  item={item} setCart={setCart}/>} /> 
             })
           })
       })}
