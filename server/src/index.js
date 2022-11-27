@@ -8,7 +8,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // category routes
-app.route('/')
+app.route('/api/products')
   .get(async (req, res) => {
     const allCategories = await getCategories();
     res
@@ -18,7 +18,20 @@ app.route('/')
   })
 
 //cart routes
-app.route('/carts')
+app.route('/api/carts')
+  .get(async (req, res) => {
+    const cart = await getCart(req.body.username);
+    if (cart.length === 0 ) {
+      return res
+      .json({})
+      .status(200)
+      .end();
+    }
+    return res
+    .json(cart)
+    .status(200)
+    .end();
+  })
   .post(async (req, res) => {
     let cart = await getCart(req.body.username);
     if (cart.length === 0) {
