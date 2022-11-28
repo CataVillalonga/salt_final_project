@@ -1,27 +1,34 @@
-.black-banner{
-  position: relative;
-  text-align: center;
-  color: white
-}
-
-
-.black-banner img {
-  width: 95%;
-  margin: 0 2rem;
-  border-radius: 10px;
-  height: 18rem;
+.black-banner {
+  width: 100%;
+  height: 22rem;
   overflow: hidden;
+  background-image: url('../imgs/blackBanner.png');
+  background-size:contain;
 }
 
 .product-container {
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  max-width: 70vw;
+  margin: 0 auto;
+  position: relative;
 }
 
-.product-container img {
-  width: 100%;
-  border-radius: 10px;
+.product-visuals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-visuals img {
+  width: 50rem;
+  height: 50rem;
+}
+
+.product-visuals .mobile-title {
+  display: none;
+  text-align: center;
 }
 
 .product-details {
@@ -37,16 +44,70 @@
 }
 
 .product-actions {
+  width: 100%;
   padding: 1rem;
   font-size: 2.3rem;
   display: inline-flex;
   justify-content: center;
 }
 
-.product-actions button{
+.quantity-selector {
+  font-size: 1.5rem;
+}
+
+.product-actions button,
+.product-details button {
+  background-color: #77A47E;
+  border: none;
+  color: #fff;
+  font-size: 1.75rem;
+  padding: 0.5rem;
   border-radius: 5px;
   margin-left: 1rem;
+  width: 15rem;
+}
+
+.product-actions button:hover,
+.product-details .button:hover  {
+  background-color: #456b4b;
+}
+
+.login-alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  position: absolute;
   width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+
+.product-details .login-message {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 1020px)  {
+  .black-banner {
+    display: none;
+  }
+  .product-visuals {
+    display: grid;
+  }
+  .product-visuals .mobile-title {
+    display: block;
+    text-align: center;
+  }
+  .product-details .desktop-title {
+    display: none;
+  }
+  .product-visuals img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 1020px)  {
@@ -60,14 +121,15 @@
     text-align: center;
   }
 
-  .product-visuals h3{
+  .product-visuals h3 {
     font-size: 4rem;
+    border: #456b4b 1px solid;
   }
 
   .product-details {
     justify-content: center;
     margin: 0 3rem;
-    padding-top: 10rem
+    padding-top: 5rem
   }
 
   .product-details h4 {
@@ -75,9 +137,9 @@
     margin: 5rem 0 ;
   }
 
-  .product-details p{
+  .product-details p {
     font-size: 2rem;
-    margin: 5rem 0 ;
+    margin: 2rem auto 3rem auto;
   }
 
 }
