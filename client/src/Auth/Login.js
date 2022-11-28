@@ -6,7 +6,7 @@ const LoginButton = () => {
 
   return (
    <>
-   {!isAuthenticated ? <button onClick={() => loginWithRedirect({ returnTo: window.location.origin })}>Log In</button> : 
+   {!isAuthenticated ? <button onClick={() => loginWithRedirect()}>Log In</button> : 
     <button onClick={() => logout({ returnTo: window.location.origin })}>Log Out</button>}
    </>
    

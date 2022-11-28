@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Nav from "../Components/Nav"
 import "../styles/productSubcategory.css"
 
-function ProductSubcategory({ itemsObj, category, name }) {
+function ProductSubcategory({ itemsObj, category, name, cart, setCart }) {
   const {products} = itemsObj
   const navigate = useNavigate();
   const subCategoryHandler = (e) => {
@@ -11,7 +11,7 @@ function ProductSubcategory({ itemsObj, category, name }) {
   }
   return (
     <>
-      <Nav />
+      <Nav cart={cart} setCart={setCart} />
       <section className="product-subcategory-container">
         <section className="offers-container">
           <h4>Design & Comfort</h4>

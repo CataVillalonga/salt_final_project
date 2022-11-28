@@ -1,6 +1,9 @@
 import { Routes, Route, json} from 'react-router-dom'
 import { useEffect, useState } from 'react'
+import { getCart } from "./Modules/Cart"
+import { useAuth0 } from "@auth0/auth0-react";
 import Home from './Routes/Home'
+import Profile from './Auth/Profile'
 import ProductCategory from './Routes/ProductCategory';
 import ProductSubcategory from './Routes/ProductSubcategory';
 import Product from './Routes/Product';
@@ -12,6 +15,7 @@ function App() {
 
   const [data, setData] = useState()
   const [cart, setCart] = useState()
+  const {user, isAuthenticated } = useAuth0();
 
   const getProducts = async url => {
     const response = await fetch(url);
@@ -23,31 +27,32 @@ function App() {
     getProducts('/api/products')
   },[])
   
-  const getCart = async url => {
-    const response = await fetch(url);
-    const data = await response.json();
-    setCart(data);
-  };
 
   useEffect(() => {
-    getCart('/api/carts')
-  },[])
-  console.log(cart)
+    console.log(isAuthenticated)
+    if (isAuthenticated) {
+      const name = user.name.replace(' ','-')
+      console.log(name)
+      getCart(name).then((res) => setCart(res))
+    }
+  },[isAuthenticated])
+  console.log(cart, 'caart')
 
   return (
     <>
     <Routes>
-        <Route path="/" element={<Home data={data}/>}></Route>
+        {/* <Route path="/Profile" element={<Profile data={data} cart={cart}/>}></Route> */}
+        <Route path="/" element={<Home data={data} cart={cart}/>}></Route>
         {data?.map(categoryObj => {
           const {category} = categoryObj
-        return <Route path={`/${category}`} element ={<ProductCategory categoryObj={categoryObj} category={category}/>} /> 
+        return <Route path={`/${category}`} element ={<ProductCategory cart={cart} setCart={setCart}  categoryObj={categoryObj} category={category}/>} /> 
       })}
       {data?.map(categoryObj => {
           const {category} = categoryObj
           const {subcategories} = categoryObj
           return subcategories.map(itemsObj => {
             const {name} = itemsObj
-            return <Route path={`/${category}/${itemsObj.name}`} element ={<ProductSubcategory itemsObj={itemsObj} category={category} name={name}/>} /> 
+            return <Route path={`/${category}/${itemsObj.name}`} element ={<ProductSubcategory cart={cart} setCart={setCart} itemsObj={itemsObj} category={category} name={name}/>} /> 
           })
       })}
       {data?.map(categoryObj => {
@@ -56,7 +61,7 @@ function App() {
           return subcategories.map(itemsObj => {
             const {products} = itemsObj
             return products.map( item =>{
-              return <Route path={`/${category}/${itemsObj.name}/${item.id}`} element ={<Product item={item} setCart={setCart}/>} /> 
+              return <Route path={`/${category}/${itemsObj.name}/${item.id}`} element ={<Product cart={cart}  item={item} setCart={setCart}/>} /> 
             })
           })
       })}

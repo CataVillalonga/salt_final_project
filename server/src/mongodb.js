@@ -39,14 +39,12 @@ const totalPrice = productArr => {
 export const getCategories = async () => {
   await connectCategory();
   const allCategories = await categories.find().toArray();
-  setTimeout(() => client.close(), 1000);
   return allCategories;
 };
 
 export const getCart = async (username) => {
   await connectCart();
   const cart = await carts.find({username: username}).toArray();
-  setTimeout(() => client.close(), 1000);
   return cart;
 };
 
@@ -66,8 +64,7 @@ export const postCart = async (username, product) => {
     total_items: 1,
     total_price: newPrice,
   }
-  carts.insertOne(cart);
-  setTimeout(() => client.close(), 1000);
+  await carts.insertOne(cart);
   return cart;
 };
 
@@ -125,8 +122,7 @@ export const deleteCart = async (username) => {
   try {
     await connectCart();
     await carts.deleteOne({ username });
-    setTimeout(() => client.close(), 1000);
-  } catch (e) {
+    } catch (e) {
     throw new Error(e.message);
   }
 };
