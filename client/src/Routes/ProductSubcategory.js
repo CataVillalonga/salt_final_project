@@ -25,10 +25,10 @@ function ProductSubcategory({ itemsObj, category, name, cart, setCart }) {
           </select>
         </section>
         <main className="subcategory-items-container">
-          {products.map( product => {
+          {products.map( (product,i) => {
             console.log()
             return (
-              <section className="subcategory-items">
+              <section key={i} className="subcategory-items">
                 <img id={product.id} src={product.img} onClick={subCategoryHandler}/>
                 <div className="subcategory-items-detail-container">
                 <h4>{product.name}</h4>

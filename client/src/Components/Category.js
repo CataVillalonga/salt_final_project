@@ -15,8 +15,8 @@ function Category({ obj }) {
       <img className='img-container' alt='category ' src={obj.img}/>
     </section>
     <section className='subcategory-container'>
-      {obj.subcategories?.map(item => {
-        return <SubCategory item={item}/>
+      {obj.subcategories?.map((item , i)=> {
+        return <SubCategory key={i} item={item}/>
       })}  
     </section>
     </section>

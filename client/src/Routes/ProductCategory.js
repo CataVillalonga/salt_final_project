@@ -22,10 +22,10 @@ function ProductCategory({ categoryObj, category, cart, setCart }) {
       </section >
       <h5 className="product-title">Shop by product:</h5>
       <section className="products-container">
-        {subcategories.map( item => {
+        {subcategories.map( (item ,i)=> {
           console.log(item.img)
           return (
-            <section className="category-items" >
+            <section key={i} className="category-items" >
               <img  alt='category' src={item.img}/>
               <p onClick={categoryHandler}>{item.name}</p>
             </section>

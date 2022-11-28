@@ -2,7 +2,7 @@ import express from 'express';
 import { getCategories, getCart, postCart, updateCart, deleteProduct, deleteCart } from './mongodb.js';
 
 const app = express();
-const port = 8081;
+const port = 8080;
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -65,7 +65,7 @@ app.route('/api/carts')
     .status(200)
     .end();
   })
-app.route('/carts/:username')
+app.route('/api/carts/:username')
 .get(async (req, res) => {
   const name =req.params.username;
   const cart = await getCart(name);
