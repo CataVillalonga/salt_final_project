@@ -2,7 +2,7 @@ import express from 'express';
 import { getCategories, getCart, postCart, updateCart, deleteProduct, deleteCart } from './mongodb.js';
 
 const app = express();
-const port = 8080;
+const port = 8081;
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());

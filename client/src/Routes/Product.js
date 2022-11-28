@@ -4,7 +4,7 @@ import { addToCart } from "../Modules/Cart"
 import { useAuth0 } from "@auth0/auth0-react";
 import '../styles/product.css'
 import blackBanner from '../imgs/blackBanner.jpg'
-function Product({ item, setCart }) {
+function Product({ item, setCart, data }) {
   const {user, isAuthenticated } = useAuth0();
   const [loginAlert , setLoginAlert] = useState(false)
   const quantity = [1,2,3,4,5,6,7,8,9]
@@ -17,7 +17,7 @@ function Product({ item, setCart }) {
   }
   return (
     <>
-    <Nav />
+    <Nav data={data}/>
     {/* <section>
       <img className='black-banner'src={blackBanner}/>
     </section> */}

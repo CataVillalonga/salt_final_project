@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Nav from "../Components/Nav"
 import '../styles/productCategory.css'
 
-function ProductCategory({ categoryObj, category }) {
+function ProductCategory({ categoryObj, category, data }) {
   const { subcategories } = categoryObj
   const navigate = useNavigate();
 
@@ -14,7 +14,7 @@ function ProductCategory({ categoryObj, category }) {
 
   return (
     <>
-    <Nav />
+    <Nav data={data}/>
     <section className="product-Category-container">
       <section className="banner-container">
         <img   alt='category'src={categoryObj.img}/>

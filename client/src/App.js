@@ -6,7 +6,7 @@ import ProductSubcategory from './Routes/ProductSubcategory';
 import Product from './Routes/Product';
 import './App.css';
 
-
+// const mockData = require('./mock')
 
 function App() {
 
@@ -22,6 +22,10 @@ function App() {
   useEffect(() => {
     getProducts('/api/products')
   },[])
+
+//   useEffect(() => {
+//     setData(mockData)
+//  })
   
   const getCart = async url => {
     const response = await fetch(url);
@@ -40,14 +44,14 @@ function App() {
         <Route path="/" element={<Home data={data}/>}></Route>
         {data?.map(categoryObj => {
           const {category} = categoryObj
-        return <Route path={`/${category}`} element ={<ProductCategory categoryObj={categoryObj} category={category}/>} /> 
+        return <Route path={`/${category}`} element ={<ProductCategory categoryObj={categoryObj} category={category} data={data}/>} /> 
       })}
       {data?.map(categoryObj => {
           const {category} = categoryObj
           const {subcategories} = categoryObj
           return subcategories.map(itemsObj => {
             const {name} = itemsObj
-            return <Route path={`/${category}/${itemsObj.name}`} element ={<ProductSubcategory itemsObj={itemsObj} category={category} name={name}/>} /> 
+            return <Route path={`/${category}/${itemsObj.name}`} element ={<ProductSubcategory itemsObj={itemsObj} category={category} name={name} data={data}/>} /> 
           })
       })}
       {data?.map(categoryObj => {
@@ -56,7 +60,7 @@ function App() {
           return subcategories.map(itemsObj => {
             const {products} = itemsObj
             return products.map( item =>{
-              return <Route path={`/${category}/${itemsObj.name}/${item.id}`} element ={<Product item={item} setCart={setCart}/>} /> 
+              return <Route path={`/${category}/${itemsObj.name}/${item.id}`} element ={<Product item={item} setCart={setCart} data={data}/>} /> 
             })
           })
       })}

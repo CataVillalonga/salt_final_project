@@ -16,18 +16,17 @@
 }
 
 .closebtn{
-  text-decoration: none;
-  color: #fff;
-  transition: 0.3s;
-  border: none;
-  font-size: 2rem;
+  color: #818181;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 46px;
   background-color: #2a2a2a;
+  border: none;
 }
   
 .closebtn:hover {
-    text-decoration: none;
-    color: #EBC26F;
-    font-weight: 700;
+  color: #EBC26F;
 }
   
 .cart-header {
@@ -50,6 +49,7 @@
 .cart-heading {
   margin: 0;
   font-weight: 700;
+  font-size: 24px;
 }
 
 .cart-container {
@@ -87,7 +87,6 @@
   display: grid;
   width: 65%;
 }
-
 
 .cart-item-text {
   color: #111;
@@ -142,13 +141,14 @@
 }
 
 .price {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 
 .price:nth-of-type(2) {
   color: #c34747;
   font-weight: 700;
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 .checkoutBtn {
@@ -156,7 +156,7 @@
   border: 0.5px solid #77A47E;
   border-radius: 4px;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   height: 4rem;
   width: 90%;
   margin: 0 auto;

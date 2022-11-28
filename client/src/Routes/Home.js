@@ -7,7 +7,7 @@ function Home({ data }) {
   
   return (
     <>
-      <Nav />
+      <Nav data={data}/>
       <Carousels />
       <main className="main-container">
         {data?.map(obj => {
