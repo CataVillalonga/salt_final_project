@@ -2,53 +2,28 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.categories-subcategories {
   text-align: center;
-  max-width: auto;
 }
-.category-name {
-  padding: 0 20px;
-  text-align: left;
-}
-.category-container {
-  display: flex;
+.main-title{
   justify-content: center;
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 2rem;
+  text-shadow: 0.5px 0.5px 1px #000000;
+  background: #eac26f;
+  color: white;
 }
 .subcategory-container {
-  display: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 2rem;
 }
-.img-container {
-  margin: 0px 20px 20px;
-  max-width: 100%;
-  padding: 0 20px;
-}
-@media only screen and (min-width: 768px) {
-  .category-container {
-    display: none;
-  }
+
+@media only screen and (min-width: 1020px) {
+  
   .subcategory-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
-    max-height: auto;
-  }
-  .img-container {
-    flex: 1;
-    margin: 0px 0 20px;
-    max-width: 100%;
-    padding: 0 20px;
-  }
-}
-@media only screen and (min-width: 1140px) {
-  .category-container {
-    display: none;
-  }
-  .subcategory-container {
-    display: grid;
-    justify-content: center;
-    max-height: auto;
-    max-width: 100%;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding: 0 4rem;
   }
 }
