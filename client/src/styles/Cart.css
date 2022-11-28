@@ -128,7 +128,7 @@
   padding: 1rem;
   background-color: #f0ecec;
   width: 100%;
-  position: absolute;
+  position: sticky;
   bottom: 0;
   right: 0;
 }

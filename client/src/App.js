@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import { getCart } from "./Modules/Cart"
 import { useAuth0 } from "@auth0/auth0-react";
 import Home from './Routes/Home'
+import Profile from './Auth/Profile'
 import ProductCategory from './Routes/ProductCategory';
 import ProductSubcategory from './Routes/ProductSubcategory';
 import Product from './Routes/Product';
@@ -40,6 +41,7 @@ function App() {
   return (
     <>
     <Routes>
+        {/* <Route path="/Profile" element={<Profile data={data} cart={cart}/>}></Route> */}
         <Route path="/" element={<Home data={data} cart={cart}/>}></Route>
         {data?.map(categoryObj => {
           const {category} = categoryObj
