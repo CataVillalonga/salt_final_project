@@ -7,20 +7,20 @@ import '../styles/main.css'
 function Home({ data }) {
   return (
     <>
-      <Nav />
-      <Carousels />
+      <Nav data={data}/>
+      <Carousels/>
       <main className="main-container">
         <p className='main-title'> Shop by category </p>
         <section className='category-container'>
-          {data?.map(obj => {
-            return <Category obj={obj}/>
+          {data?.map((obj,index) => {
+            return <Category key={index}obj={obj}/>
           })}
         </section>
         <p className='main-title'> Shop by item </p>
         <section className='subcategory-container'>
-        {data?.map(obj => {
+        {data?.map((obj,index) => {
           const {subcategories} = obj
-          return <SubCategory subcategory={subcategories}/>
+          return <SubCategory key={index} subcategory={subcategories} category={obj.category}/>
         })}
         </section>
       </main>

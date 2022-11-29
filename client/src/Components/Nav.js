@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import '../styles/Nav.css';
 import Login from '.././Auth/Login'
 import Cart from './Cart'
-function Nav() {
+function Nav({data}) {
   const [isOpen, setIsOpen] = useState(false);
   const [style, setStyle] = useState('closedsidepanel')
   const navigate = useNavigate();
@@ -41,10 +41,10 @@ function Nav() {
           
           
           <section className="section column logo">
-            <img className="CIKC-Logo" src={require('../images/CIKC_logo.png')}></img>
+            <img className="CIKC-Logo" src={require('../images/CIKC_logo.png')} onClick={handleCart}></img>
           </section>
           <section className="section column iconAndButton">
-            <a onClick={handleCart} className="a shoppingBagIcon" id="linkOne" href="#thingOne"><HiOutlineShoppingBag /></a>
+            <a className="a shoppingBagIcon" id="linkOne" href="#thingOne"><HiOutlineShoppingBag /></a>
             <button className="button" type="button">PAY</button>
           </section>
         </section>

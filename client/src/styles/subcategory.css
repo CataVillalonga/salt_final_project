@@ -7,6 +7,7 @@
 .subcategory img{
   width: 100%;
   min-height: 17rem;
+  max-height: 17rem;
   filter: brightness(80%);
   border-radius: 15px;
   padding: 0.5rem;

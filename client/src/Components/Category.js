@@ -5,13 +5,15 @@ import '../styles/category.css'
 function Category({ obj }) {
   const {subcategories} = obj
   const navigate = useNavigate();
-  const xHandler = () => {
-    navigate('/bedroom');
+
+  const categoryHandler = (e) => {
+    navigate(`/${e.target.alt}`);
   }
+
   return (
     <section className='category'>
-      <img alt='category ' src={obj.img}/>
-      <p>{obj.category}</p>
+      <img src={obj.img} alt={obj.category} onClick={categoryHandler}/>
+      <p>{obj.category.replace('-',' ')}</p>
     </section>
   )
 }
