@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import Nav from "../Components/Nav"
 import '../styles/productCategory.css'
 
-function ProductCategory({ categoryObj, category, cart, setCart }) {
+function ProductCategory({ categoryObj, category, data, cart, setCart }) {
   const { subcategories } = categoryObj
   const navigate = useNavigate();
 
@@ -14,7 +14,7 @@ function ProductCategory({ categoryObj, category, cart, setCart }) {
 
   return (
     <>
-    <Nav cart={cart} setCart={setCart}/>
+    <Nav data={data} cart={cart} setCart={setCart}/>
     <section className="product-Category-container">
       <section className="banner-container">
         <img   alt='category'src={categoryObj.img}/>

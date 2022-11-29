@@ -9,7 +9,7 @@ import ProductSubcategory from './Routes/ProductSubcategory';
 import Product from './Routes/Product';
 import './App.css';
 
-
+// const mockData = require('./mock')
 
 function App() {
 
@@ -26,6 +26,10 @@ function App() {
   useEffect(() => {
     getProducts('/api/products')
   },[])
+
+//   useEffect(() => {
+//     setData(mockData)
+//  })
   
 
   useEffect(() => {
@@ -44,14 +48,14 @@ function App() {
         <Route path="/" element={<Home data={data} cart={cart} setCart={setCart}/>}></Route>
         {data?.map((categoryObj, i )=> {
           const {category} = categoryObj
-        return <Route key={i} path={`/${category}`} element ={<ProductCategory key={i} cart={cart} setCart={setCart}  categoryObj={categoryObj} category={category}/>} /> 
+        return <Route path={`/${category}`} element ={<ProductCategory  key={i} cart={cart} setCart={setCart} categoryObj={categoryObj} category={category} data={data}/>} /> 
       })}
       {data?.map(categoryObj => {
           const {category} = categoryObj
           const {subcategories} = categoryObj
           return subcategories.map((itemsObj, i) => {
             const {name} = itemsObj
-            return <Route key={i} path={`/${category}/${itemsObj.name}`} element ={<ProductSubcategory  key={i} cart={cart} setCart={setCart} itemsObj={itemsObj} category={category} name={name}/>} /> 
+            return <Route path={`/${category}/${itemsObj.name}`} element ={<ProductSubcategory   key={i} cart={cart} setCart={setCart} itemsObj={itemsObj} category={category} name={name} data={data}/>} /> 
           })
       })}
       {data?.map(categoryObj => {
@@ -59,8 +63,8 @@ function App() {
           const {subcategories} = categoryObj
           return subcategories.map(itemsObj => {
             const {products} = itemsObj
-            return products.map( (item, i)=>{
-              return <Route key={i} path={`/${category}/${itemsObj.name}/${item.id}`} element ={<Product  key={i} cart={cart}  item={item} setCart={setCart}/>} /> 
+            return products.map( (item, i) =>{
+              return <Route path={`/${category}/${itemsObj.name}/${item.id}`} element ={<Product key={i} cart={cart} item={item} setCart={setCart} data={data}/>} /> 
             })
           })
       })}

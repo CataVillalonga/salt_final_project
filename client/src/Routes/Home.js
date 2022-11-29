@@ -7,7 +7,7 @@ function Home({ data, cart, setCart }) {
   
   return (
     <>
-      <Nav cart={cart} setCart={setCart}/>
+      <Nav data={data} cart={cart} setCart={setCart}/>
       <Carousels />
       <main className="main-container">
         {data?.map(obj=> {

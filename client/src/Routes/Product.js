@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { addToCart } from "../Modules/Cart"
 import { useAuth0 } from "@auth0/auth0-react";
 import '../styles/product.css'
-function Product({ item, setCart, cart }) {
+function Product({ item, setCart, cart, data }) {
 
   const {user, isAuthenticated } = useAuth0();
   const [loginAlert , setLoginAlert] = useState(false)
@@ -33,7 +33,7 @@ function Product({ item, setCart, cart }) {
   }
   return (
     <>
-    <Nav cart={cart} setCart={setCart} />
+    <Nav cart={cart} setCart={setCart} data={data}/>
     <section className='black-banner'>
     </section>
     <section className="product-container">
