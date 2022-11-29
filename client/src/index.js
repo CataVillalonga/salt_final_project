@@ -10,7 +10,7 @@ root.render(
         <Auth0Provider
             domain='dev-ulorjybo5dpitvoe.us.auth0.com'
             clientId='dq2RtYTpWdCtfGA6heNc8uq7rBZlYP4O'
-            redirectUri={window.location.origin}
+            redirectUri={'http://localhost:3000/Profile'}
             cacheLocation="localstorage"
             >
             <App />

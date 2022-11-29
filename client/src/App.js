@@ -41,7 +41,7 @@ function App() {
   return (
     <>
     <Routes>
-        {/* <Route path="/Profile" element={<Profile data={data} cart={cart}/>}></Route> */}
+        <Route path="/Profile" element={<Profile data={data} cart={cart}/>}></Route>
         <Route path="/" element={<Home data={data} cart={cart} setCart={setCart}/>}></Route>
         {data?.map((categoryObj, i )=> {
           const {category} = categoryObj

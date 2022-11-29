@@ -10,6 +10,7 @@ function Product({ item, setCart, cart }) {
   const quantity = [1,2,3,4,5,6,7,8,9]
   console.log(item)
   const cartHandler = async(e) => {
+
     e.preventDefault()
     if (!isAuthenticated){
       return setLoginAlert(<p>Please login to add items to your cart</p>)
