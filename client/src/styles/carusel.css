@@ -1,9 +1,22 @@
-.banana {
-  height: 50rem;
+.carousel-container{
+  height: 30rem;
 }
 
-.carusel img{
+.carousel img{
   width: 100%!important;
-  height: 50rem;
+  height: 30rem;
   object-fit: cover;
+}
+.carousel-indicators {
+  display: none;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .carousel-container {
+    height: 50rem;
+  }
+  .carousel img{
+    height: 50rem;
+  }
 }

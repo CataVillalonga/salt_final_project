@@ -9,7 +9,6 @@ function ProductCategory({ categoryObj, category, data, cart, setCart }) {
   const categoryHandler = (e) => {
     const subCat = e.target
     navigate(`/${category}/${subCat.innerText}`)
-    console.log(`/${category}/${subCat.innerText}`)
   }
 
   return (
@@ -23,7 +22,6 @@ function ProductCategory({ categoryObj, category, data, cart, setCart }) {
       <h5 className="product-title">Shop by product:</h5>
       <section className="products-container">
         {subcategories.map( (item ,i)=> {
-          console.log(item.img)
           return (
             <section key={i} className="category-items" >
               <img  alt='category' src={item.img}/>
