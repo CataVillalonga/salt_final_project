@@ -36,7 +36,6 @@ function App() {
       getCart(name).then((res) => setCart(res))
     }
   },[isAuthenticated])
-  console.log(cart, 'caart')
 
   return (
     <>

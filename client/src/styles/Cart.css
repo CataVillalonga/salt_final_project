@@ -1,6 +1,6 @@
-.closedsidepanel,  .opensidepanel  {
+.closedsidepanel, .opensidepanel  {
   width: 0%;
-  height:100%;
+  height: 100vh;
   position: fixed;
   z-index: 99;
   top: 0;
@@ -11,11 +11,12 @@
   overflow-x: hidden;
   border-left: 1px solid #EBC26F;
 }
+
 .opensidepanel  {
   width: 30%;
 }
 
-.closebtn{
+.closebtn {
   text-decoration: none;
   color: #fff;
   transition: 0.3s;
@@ -31,14 +32,16 @@
 }
   
 .cart-header {
+    height: 10vh;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 8rem;
     background-color: #2a2a2a;
     color: #fff;
     padding: 0 2rem;
 }
+
 .cartLogo {
   height: 4.5rem;
   width: 4.5rem;
@@ -54,7 +57,10 @@
 
 .cart-container {
   padding: 2rem;
-  display: grid;
+  height: 80vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .cart-items {
@@ -78,9 +84,8 @@
 }
 
 .cart-item-img {
-  height: 7rem;
-  width: 10rem;
-  object-fit: contain;
+  height: 8rem;
+  width: 8rem;
 }
 
 .cart-item {
@@ -93,13 +98,13 @@
   color: #111;
   display: flex;
   align-items: flex-end;
-  font-size: 1.35rem;
+  font-size: 1.5rem;
   padding: 0;
   margin: 0;
 }
 
 .cart-item-text:nth-of-type(2) {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 600;
   align-items: flex-start;
 }
@@ -124,13 +129,14 @@
 }
 
 .checkout {
+  height: 10vh;
+  width: 100%;
   display: grid;
   padding: 1rem;
   background-color: #f0ecec;
-  width: 100%;
-  position: sticky;
+  /* position: sticky;
   bottom: 0;
-  right: 0;
+  right: 0; */
 }
 
 .total-price {
