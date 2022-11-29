@@ -221,7 +221,7 @@
   "img": "https://img.bygghemma.se/pimages/toalettstol-carat-zala__9a6efe7f-8345-4d16-90de-4400ae5b78b5.jpg?auto=format,compress&w=673&h=673&dpr=2&q=30"
   },
   {
-  "name": "Bathroom Furnishings",
+  "name": "Bathroom-Furnishings",
   "products": [
   {
   "id": 1,
@@ -274,7 +274,7 @@
   "img": "https://s.sparmax.se/media/catalog/product/cache/7afe3de5bf9c7ed41048e2a003cd4e59/o/l/olivia-120-dobbel-sort-h_yglans-rect-speil-lys-120-sort-servant.jpg"
   },
   {
-  "name": "Bathroom Organising",
+  "name": "Bathroom-Organising",
   "products": [
   {
   "id": 1,
@@ -339,8 +339,8 @@
   "products": [
   {
   "id": 1,
-  "name": "Continental bed",
-  "description": "For piece continental bed with memory foam mattress",
+  "name": "Carpe Diem Continental bed",
+  "description": "Carpe Diem offers this luxurious and beautiful continental bed that looks as stunning as it feels. Once you settle in, you’ll feel like you’re floating. One of the main advantages of a continental bed is its height, which is created by three comfortable mattress layers. Our continental beds feature patented solutions that allow you to sleep in the most comfortable, ergonomic position.",
   "price": "18 000:-",
   "quantity": 20,
   "img": "https://quickbutik.imgix.net/15778a/products/5e860e87558ae.jpeg"
@@ -551,7 +551,7 @@
   "img": "https://johnlewis.scene7.com/is/image/JohnLewis/bedding-carousel1-070922"
   },
   {
-  "name": "Bedroom Benches",
+  "name": "Bedroom-Benches",
   "products": [
   {
   "id": 1,
@@ -605,7 +605,7 @@
   "img": "https://m.media-amazon.com/images/I/51IEmc8SpzL._AC_SY580_.jpg"
   },
   {
-  "name": "Dressing Tables",
+  "name": "Dressing-Tables",
   "img": "https://www.mattressman.co.uk/images/ProductImages/800px/olivia-corner-dressing-table--69e38337.jpg",
   "products": [
   {
@@ -804,7 +804,7 @@
   ]
   },
   {
-  "name": "Plant Pots",
+  "name": "Plant-Pots",
   "img": "https://www.ikea.com/gb/en/images/products/gradvis-plant-pot-in-outdoor-green__1093824_pe863212_s5.jpg?f=xl",
   "products": [
   {
@@ -896,7 +896,7 @@
   ]
   },
   {
-  "name": "Festive Lighting",
+  "name": "Festive-Lighting",
   "img": "https://images.pexels.com/photos/711004/pexels-photo-711004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   "products": [
   {
@@ -1011,7 +1011,7 @@
   "img": "https://images.pexels.com/photos/276583/pexels-photo-276583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
   },
   {
-  "name": "Coffee Tables",
+  "name": "Coffee-Tables",
   "products": [
   {
   "id": 1,
@@ -1119,7 +1119,7 @@
   "img": "https://www.mobelmastarna.se/pub_images/original/George-skank-rokt-miljo-2019.jpg"
   },
   {
-  "name": "TV Stands",
+  "name": "TV-Stands",
   "products": [
   {
   "id": 1,
@@ -1288,7 +1288,7 @@
   "img": "https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80",
   "subcategories": [
   {
-  "name": "Dining Tables",
+  "name": "Dining-Tables",
   "img": "https://images.pexels.com/photos/373548/pexels-photo-373548.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   "products": [
   {
@@ -1342,7 +1342,7 @@
   ]
   },
   {
-  "name": "Dinner Sets",
+  "name": "Dinner-Sets",
   "img": "https://images.pexels.com/photos/269264/pexels-photo-269264.jpeg?auto=compress&cs=tinysrgb&w=800",
   "products": [
   {
@@ -1450,7 +1450,7 @@
   ]
   },
   {
-  "name": "Kitchen Appliances",
+  "name": "Kitchen-Appliances",
   "img": "https://feedsportal.com/wp-content/uploads/2019/06/kitchen-appliances.jpg",
   "products": [
   {
@@ -1504,7 +1504,7 @@
   ]
   },
   {
-  "name": "Kitchen Storage",
+  "name": "Kitchen-Storage",
   "img": "https://images.pexels.com/photos/5824492/pexels-photo-5824492.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   "products": [
   {
@@ -1558,7 +1558,7 @@
   ]
   },
   {
-  "name": "Kitchen Cleaning",
+  "name": "Kitchen-Cleaning",
   "img": "https://images.pexels.com/photos/10573262/pexels-photo-10573262.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   "products": [
   {
@@ -1613,4 +1613,4 @@
   }
   ]
   }
-]
+  ]

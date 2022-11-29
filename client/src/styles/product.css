@@ -10,6 +10,7 @@
   padding: 2rem;
   display: flex;
   flex-direction: column;
+  width: 70vw;
   max-width: 70vw;
   margin: 0 auto;
   position: relative;
@@ -22,8 +23,9 @@
 }
 
 .product-visuals img {
-  width: 50rem;
-  height: 50rem;
+  width: 60rem;
+  height: 60rem;
+  border: 2px solid #EBC26F;
 }
 
 .product-visuals .mobile-title {
@@ -90,6 +92,12 @@
   margin: 1rem 0;
 }
 
+.item-added {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #456b4b
+}
+
 @media screen and (max-width: 1020px)  {
   .black-banner {
     display: none;
@@ -115,6 +123,9 @@
   .product-container  {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
+    margin-top: 10rem;
+    width: 70vw;
+    max-width: 70vw;
   } 
 
   .product-visuals {

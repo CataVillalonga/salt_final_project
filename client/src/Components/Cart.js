@@ -7,10 +7,20 @@ import { useAuth0 } from "@auth0/auth0-react";
 function Cart({ style, setStyle, cart, setCart }) {
   const {user, isAuthenticated } = useAuth0();
   const productList = cart?.products;
-  const totalPrice = cart?.total_price;
-  // const totalPriceArr = total.toString().split('');
-  // totalPriceArr.splice(-3, 0, ' ');
-  // const totalPrice = totalPriceArr.join('') + ':-';
+  const total = cart?.total_price
+  let totalPrice = '';
+
+  const priceConverter = (total) => {
+    if (total) {
+      const array = total.toString(10).split('');
+      array.splice(-3, 0, ' ')
+      totalPrice = array.join('') + ':-';
+      return totalPrice;
+    }
+  }
+
+  priceConverter(total);
+
   const [pressed, setPressed] = useState(false)
 
   const deleteFromCart = async(obj) => {

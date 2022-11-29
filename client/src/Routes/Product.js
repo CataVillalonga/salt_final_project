@@ -8,6 +8,7 @@ function Product({ item, setCart, cart }) {
 
   const {user, isAuthenticated } = useAuth0();
   const [loginAlert , setLoginAlert] = useState(false)
+  const [itemAdded , setItemAdded] = useState(null)
   const quantity = [1,2,3,4,5,6,7,8,9]
 
   const cartHandler = async(e) => {
@@ -21,6 +22,10 @@ function Product({ item, setCart, cart }) {
         </article>
       </section>)
     }
+    setItemAdded(<p className="item-added">ITEM ADDED TO BASKET</p>)
+    setTimeout(() => {
+      setItemAdded(null)
+    }, 3000)
     const name = user.name.replace(' ','-')
     const updatedCart = await addToCart(name, item)
     setCart(updatedCart)
@@ -45,7 +50,8 @@ function Product({ item, setCart, cart }) {
           </select>
           <button className="addToCartBtn" onClick={cartHandler}>Add to Basket  </button>
       </div>
-          {loginAlert}
+        {itemAdded}
+        {loginAlert}
       </section>
     </section>
     </>
