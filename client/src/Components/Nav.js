@@ -18,9 +18,6 @@ function Nav({ cart, setCart, data }) {
   const handleSearch = (e) => {
     setError(false);
     setSearchKey(e.target.value);
-    console.log('keyTerm', e.target.value);
-    console.log('error', error);
-
   }
 
   const handleEnter = (e) => {
@@ -36,7 +33,6 @@ function Nav({ cart, setCart, data }) {
         return window.location.pathname = `/${category}/${keyword}`
       }
       e.preventDefault()
-      console.log('true-error', error);
       return setError(true)
     }
   }
@@ -74,7 +70,8 @@ function Nav({ cart, setCart, data }) {
           </section>
 
           <section className="section column iconAndButton">
-            <a onClick={handleCart} className="a shoppingBagIcon" id="linkOne"><HiOutlineShoppingBag /></a>
+            {/* added code here */}
+            <a onClick={handleCart} className="a shoppingBagIcon" id="linkOne"><HiOutlineShoppingBag />{cart?.products?.length > 0 ? <p className="total-items">{cart?.products?.length}</p> : null}</a>
             <Login/>
           </section>
 
@@ -86,22 +83,11 @@ function Nav({ cart, setCart, data }) {
             <input type="text" onKeyDown={(e) => handleEnter(e)} onChange={handleSearch} value={searchKey} placeholder="&#x1F50D; Search.." />
           </section>
           {error ? <p className="p error">Not found. Try another product.</p> : ''}
-
         </section>
-        
       </section>
       
-      <section className="desktop">
-        
-        {/* <section className="section row">
-          <section className="section column">
-            <h1>Bedroom up to 40%</h1>
-          </section>
-          <button className="button"><i className="fa fa-sign-in"></i></button>
-        </section> */}
-        
+      <section className="desktop">        
         <section className="section row">
-
           <section className="section column logo">
             <img className="CIKC-Logo" src={require('../images/CIKC_logo.png')} onClick={logoHandler}></img>
           </section>
@@ -112,7 +98,8 @@ function Nav({ cart, setCart, data }) {
 
 
           <section className="section column iconAndButton">
-            <a onClick={handleCart} className="a shoppingBagIcon" id="linkOne"><HiOutlineShoppingBag /></a>
+            {/* added code here */}
+            <a onClick={handleCart} className="a shoppingBagIcon" id="linkOne"><HiOutlineShoppingBag />{cart?.products.length > 0 ? <p className="total-items">{cart?.products.length}</p> : null}</a>
             <Login/>
           </section>
 

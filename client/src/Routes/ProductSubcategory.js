@@ -57,7 +57,7 @@ function ProductSubcategory({ itemsObj, category, name, data, cart, setCart }) {
             if (x < y) {return 1;}
             if (x > y) {return -1;}
             return 0;
-          }).map( product => {
+          }).map( (product, i) => {
             return (
               <section key={i} className="subcategory-items">
                 <img id={product.id} src={product.img} onClick={subCategoryHandler} alt="Product image"/>

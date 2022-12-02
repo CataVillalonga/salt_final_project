@@ -36,7 +36,7 @@ export const getCart = async (username) => {
 
   export const deleteAllCart = async (username) => {
 
-    const response = await fetch('/api/carts', {
+    await fetch('/api/carts', {
       method:'DELETE',
       headers: {
         Accept: 'application/json',
@@ -46,9 +46,10 @@ export const getCart = async (username) => {
     });
   };
   
-export default {addToCart, getCart, deleteItem, deleteAllCart};
-// const getProducts = async url => {
-//   const response = await fetch(url);
-//   const data = await response.json();
-//   setData(data);
-// };
+export default {
+  addToCart,
+  getCart,
+  deleteItem, 
+  deleteAllCart
+};
+

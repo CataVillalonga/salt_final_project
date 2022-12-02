@@ -20,7 +20,8 @@ input[type=text] {
   border: 1px solid #EBC26F;
   border-radius: 10px;
   height: 40px;
-  padding: 0 0 10px 10px; 
+  padding-left: 1rem; 
+/* code to merge */
 }
 
 .row {
@@ -83,7 +84,6 @@ input[type=text] {
 }
 
 .sidepanel .closebtn {
-  /* color: #818181; */
   position: absolute;
   top: 0;
   left: 20px;
@@ -116,7 +116,7 @@ input[type=text] {
 }
 
 .logo {
-  justify-content: center;
+  justify-content: right;
   padding: 0;
 }
 
@@ -126,8 +126,9 @@ input[type=text] {
   cursor: pointer;
 }
 
+/* code to merge */
 .iconAndButton {
-  justify-content: right;
+  justify-content: space-between;
   max-width: 150px;
 }
 
@@ -135,7 +136,26 @@ input[type=text] {
   font-size: 3.5rem;
   padding: 0 8px 8px;
   cursor: pointer;
+  position: relative;
 }
+
+.total-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  background-color: #77A47E;
+  padding: 0;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 1.2rem;
+  right: 0.25rem;
+}
+/* code to merge */
 
 .button {
   background-color: #77A47E;
@@ -216,7 +236,7 @@ input[type=text] {
   input[type=text] {
     border: 1px solid #EBC26F;
     border-radius: 5px;
-    padding: 0 0 10px 10px;
+/* code to merge */
   }
 
   .closebtn {

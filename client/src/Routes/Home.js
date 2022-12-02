@@ -1,17 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useEffect } from "react";
 import Carousels from '../Components/Carousels'
 import Category from '../Components/Category';
 import SubCategory from '../Components/SubCategory';
 import Nav from '../Components/Nav'
 import '../styles/main.css'
 function Home({ data, cart, setCart }) {
-  
+
   return (
     <>
       <Nav data={data} cart={cart} setCart={setCart}/>
       <Carousels />
-      <Nav data={data}/>
-      <Carousels/>
       <main className="main-container">
         <p className='main-title'> Shop by category </p>
         <section className='category-container'>

@@ -4,6 +4,7 @@
   justify-content: center;
   text-align: center;
 }
+
 .main-title{
   justify-content: center;
   font-weight: 600;
@@ -14,6 +15,7 @@
   font-size: 3rem;
   letter-spacing: 1px;
 }
+
 .subcategory-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
